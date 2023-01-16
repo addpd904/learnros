@@ -1,0 +1,8 @@
+prefix=/home/addpd/roscode/install
+
+Name: stage1
+Description: Description of stage1
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

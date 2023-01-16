@@ -1,0 +1,39 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		// {
+		// 	"type": "catkin_make",
+		// 	"args": [
+		// 		"--directory",
+		// 		"/home/addpd/roscode",
+		// 		"-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+		// 	],
+		// 	"problemMatcher": [
+		// 		"$catkin-gcc"
+		// 	],
+		// 	"group": "build",
+		// 	"label": "catkin_make: build"
+		// }
+		{
+			"type": "shell",
+			"args": [],
+			"problemMatcher": [
+				"$msCompile"
+			],
+			"command":"catkin_make",
+			"presentation": {
+				"reveal": "always",
+			},
+			"group": {"kind": "build","isDefault": true},
+			"label": "catkin_make: debug"
+		}
+
+		// {
+		// 	"label": "catkin_make: build",
+		// 	"type": "shell",
+		// 	"args": [],
+		// 	"group": {"kind": "build","isDefault": true},
+		// 	"problemMatcher": "$msCompile"
+		// }
+	]
+}
