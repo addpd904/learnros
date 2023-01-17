@@ -8,7 +8,9 @@
             "includePath": [
                 "/opt/ros/noetic/include/**",
                 "/usr/include/**",
-                "/opt/ros/noetic/include"
+                "/opt/ros/noetic/include",
+                "/home/addpd/roscode/devel/include/**",
+                "${workspaceFolder}/devel/include"
             ],
             "name": "ROS",
             "intelliSenseMode": "gcc-x64",

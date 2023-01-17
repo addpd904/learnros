@@ -171,7 +171,10 @@ stage1/clean: stage1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 # Directory level rules for directory topic_communicate
 
 # Recursive "all" directory target.
+topic_communicate/all: topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all
+topic_communicate/all: topic_communicate/CMakeFiles/publishDIYmsg.dir/all
 topic_communicate/all: topic_communicate/CMakeFiles/listener.dir/all
+topic_communicate/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all
 topic_communicate/all: topic_communicate/CMakeFiles/talker.dir/all
 
 .PHONY : topic_communicate/all
@@ -182,8 +185,22 @@ topic_communicate/preinstall:
 .PHONY : topic_communicate/preinstall
 
 # Recursive "clean" directory target.
+topic_communicate/clean: topic_communicate/CMakeFiles/subcriberDIYmsg.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/publishDIYmsg.dir/clean
 topic_communicate/clean: topic_communicate/CMakeFiles/listener.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_geneus.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean
 topic_communicate/clean: topic_communicate/CMakeFiles/talker.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/clean
+topic_communicate/clean: topic_communicate/CMakeFiles/topic_communicate_genpy.dir/clean
 
 .PHONY : topic_communicate/clean
 
@@ -837,6 +854,60 @@ stage1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 .PHONY : stage1/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/subcriberDIYmsg.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=13,14 "Built target subcriberDIYmsg"
+.PHONY : topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule
+
+# Convenience name for target.
+subcriberDIYmsg: topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule
+
+.PHONY : subcriberDIYmsg
+
+# clean rule for target.
+topic_communicate/CMakeFiles/subcriberDIYmsg.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/clean
+.PHONY : topic_communicate/CMakeFiles/subcriberDIYmsg.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/publishDIYmsg.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/publishDIYmsg.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=11,12 "Built target publishDIYmsg"
+.PHONY : topic_communicate/CMakeFiles/publishDIYmsg.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/publishDIYmsg.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/publishDIYmsg.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/publishDIYmsg.dir/rule
+
+# Convenience name for target.
+publishDIYmsg: topic_communicate/CMakeFiles/publishDIYmsg.dir/rule
+
+.PHONY : publishDIYmsg
+
+# clean rule for target.
+topic_communicate/CMakeFiles/publishDIYmsg.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/clean
+.PHONY : topic_communicate/CMakeFiles/publishDIYmsg.dir/clean
+
+#=============================================================================
 # Target rules for target topic_communicate/CMakeFiles/listener.dir
 
 # All Build rule for target.
@@ -864,13 +935,263 @@ topic_communicate/CMakeFiles/listener.dir/clean:
 .PHONY : topic_communicate/CMakeFiles/listener.dir/clean
 
 #=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all:
+	$(MAKE) -f topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build.make topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build.make topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target _topic_communicate_generate_messages_check_deps_student"
+.PHONY : topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule
+
+# Convenience name for target.
+_topic_communicate_generate_messages_check_deps_student: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule
+
+.PHONY : _topic_communicate_generate_messages_check_deps_student
+
+# clean rule for target.
+topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build.make topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/clean
+.PHONY : topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_generate_messages"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 7
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages: topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule
+
+.PHONY : topic_communicate_generate_messages
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all: stage1/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=17 "Built target topic_communicate_generate_messages_cpp"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_cpp: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule
+
+.PHONY : topic_communicate_generate_messages_cpp
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_gencpp.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_gencpp"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule
+
+# Convenience name for target.
+topic_communicate_gencpp: topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule
+
+.PHONY : topic_communicate_gencpp
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_geneus.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_geneus.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_geneus.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_geneus"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_geneus.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_geneus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule
+
+# Convenience name for target.
+topic_communicate_geneus: topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule
+
+.PHONY : topic_communicate_geneus
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_geneus.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_geneus.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_geneus.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_genlisp.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_genlisp"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule
+
+# Convenience name for target.
+topic_communicate_genlisp: topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule
+
+.PHONY : topic_communicate_genlisp
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all: stage1/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=20 "Built target topic_communicate_generate_messages_lisp"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_lisp: topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule
+
+.PHONY : topic_communicate_generate_messages_lisp
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all: stage1/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=18,19 "Built target topic_communicate_generate_messages_eus"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_eus: topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule
+
+.PHONY : topic_communicate_generate_messages_eus
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_gennodejs"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule
+
+# Convenience name for target.
+topic_communicate_gennodejs: topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule
+
+.PHONY : topic_communicate_gennodejs
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean
+
+#=============================================================================
 # Target rules for target topic_communicate/CMakeFiles/talker.dir
 
 # All Build rule for target.
 topic_communicate/CMakeFiles/talker.dir/all:
 	$(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=11,12 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=15,16 "Built target talker"
 .PHONY : topic_communicate/CMakeFiles/talker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -889,6 +1210,89 @@ talker: topic_communicate/CMakeFiles/talker.dir/rule
 topic_communicate/CMakeFiles/talker.dir/clean:
 	$(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/clean
 .PHONY : topic_communicate/CMakeFiles/talker.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all: stage1/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=21 "Built target topic_communicate_generate_messages_nodejs"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_nodejs: topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule
+
+.PHONY : topic_communicate_generate_messages_nodejs
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all: stage1/CMakeFiles/std_msgs_generate_messages_py.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=22,23 "Built target topic_communicate_generate_messages_py"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_py: topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule
+
+.PHONY : topic_communicate_generate_messages_py
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/clean
+
+#=============================================================================
+# Target rules for target topic_communicate/CMakeFiles/topic_communicate_genpy.dir
+
+# All Build rule for target.
+topic_communicate/CMakeFiles/topic_communicate_genpy.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genpy.dir/depend
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target topic_communicate_genpy"
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genpy.dir/all
+
+# Build rule for subdir invocation for target.
+topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_genpy.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule
+
+# Convenience name for target.
+topic_communicate_genpy: topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule
+
+.PHONY : topic_communicate_genpy
+
+# clean rule for target.
+topic_communicate/CMakeFiles/topic_communicate_genpy.dir/clean:
+	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genpy.dir/clean
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genpy.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

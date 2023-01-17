@@ -56,18 +56,6 @@ CMAKE_BINARY_DIR = /home/addpd/roscode/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -79,28 +67,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target install
 install: preinstall
@@ -124,6 +90,29 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -134,6 +123,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,6 +168,36 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule
+.PHONY : topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule
+
+# Convenience name for target.
+subcriberDIYmsg: topic_communicate/CMakeFiles/subcriberDIYmsg.dir/rule
+
+.PHONY : subcriberDIYmsg
+
+# fast build rule for target.
+subcriberDIYmsg/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build
+.PHONY : subcriberDIYmsg/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/publishDIYmsg.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/publishDIYmsg.dir/rule
+.PHONY : topic_communicate/CMakeFiles/publishDIYmsg.dir/rule
+
+# Convenience name for target.
+publishDIYmsg: topic_communicate/CMakeFiles/publishDIYmsg.dir/rule
+
+.PHONY : publishDIYmsg
+
+# fast build rule for target.
+publishDIYmsg/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/build
+.PHONY : publishDIYmsg/fast
+
+# Convenience name for target.
 topic_communicate/CMakeFiles/listener.dir/rule:
 	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/listener.dir/rule
 .PHONY : topic_communicate/CMakeFiles/listener.dir/rule
@@ -183,6 +213,141 @@ listener/fast:
 .PHONY : listener/fast
 
 # Convenience name for target.
+topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule
+.PHONY : topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule
+
+# Convenience name for target.
+_topic_communicate_generate_messages_check_deps_student: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/rule
+
+.PHONY : _topic_communicate_generate_messages_check_deps_student
+
+# fast build rule for target.
+_topic_communicate_generate_messages_check_deps_student/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build.make topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/build
+.PHONY : _topic_communicate_generate_messages_check_deps_student/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages: topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/rule
+
+.PHONY : topic_communicate_generate_messages
+
+# fast build rule for target.
+topic_communicate_generate_messages/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/build
+.PHONY : topic_communicate_generate_messages/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_cpp: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/rule
+
+.PHONY : topic_communicate_generate_messages_cpp
+
+# fast build rule for target.
+topic_communicate_generate_messages_cpp/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build
+.PHONY : topic_communicate_generate_messages_cpp/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule
+
+# Convenience name for target.
+topic_communicate_gencpp: topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/rule
+
+.PHONY : topic_communicate_gencpp
+
+# fast build rule for target.
+topic_communicate_gencpp/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gencpp.dir/build
+.PHONY : topic_communicate_gencpp/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule
+
+# Convenience name for target.
+topic_communicate_geneus: topic_communicate/CMakeFiles/topic_communicate_geneus.dir/rule
+
+.PHONY : topic_communicate_geneus
+
+# fast build rule for target.
+topic_communicate_geneus/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_geneus.dir/build
+.PHONY : topic_communicate_geneus/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule
+
+# Convenience name for target.
+topic_communicate_genlisp: topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/rule
+
+.PHONY : topic_communicate_genlisp
+
+# fast build rule for target.
+topic_communicate_genlisp/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/build
+.PHONY : topic_communicate_genlisp/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_lisp: topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/rule
+
+.PHONY : topic_communicate_generate_messages_lisp
+
+# fast build rule for target.
+topic_communicate_generate_messages_lisp/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build
+.PHONY : topic_communicate_generate_messages_lisp/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_eus: topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/rule
+
+.PHONY : topic_communicate_generate_messages_eus
+
+# fast build rule for target.
+topic_communicate_generate_messages_eus/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build
+.PHONY : topic_communicate_generate_messages_eus/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule
+
+# Convenience name for target.
+topic_communicate_gennodejs: topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/rule
+
+.PHONY : topic_communicate_gennodejs
+
+# fast build rule for target.
+topic_communicate_gennodejs/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build
+.PHONY : topic_communicate_gennodejs/fast
+
+# Convenience name for target.
 topic_communicate/CMakeFiles/talker.dir/rule:
 	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/talker.dir/rule
 .PHONY : topic_communicate/CMakeFiles/talker.dir/rule
@@ -196,6 +361,51 @@ talker: topic_communicate/CMakeFiles/talker.dir/rule
 talker/fast:
 	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/build
 .PHONY : talker/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_nodejs: topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/rule
+
+.PHONY : topic_communicate_generate_messages_nodejs
+
+# fast build rule for target.
+topic_communicate_generate_messages_nodejs/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build
+.PHONY : topic_communicate_generate_messages_nodejs/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule
+
+# Convenience name for target.
+topic_communicate_generate_messages_py: topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/rule
+
+.PHONY : topic_communicate_generate_messages_py
+
+# fast build rule for target.
+topic_communicate_generate_messages_py/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build
+.PHONY : topic_communicate_generate_messages_py/fast
+
+# Convenience name for target.
+topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule
+.PHONY : topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule
+
+# Convenience name for target.
+topic_communicate_genpy: topic_communicate/CMakeFiles/topic_communicate_genpy.dir/rule
+
+.PHONY : topic_communicate_genpy
+
+# fast build rule for target.
+topic_communicate_genpy/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build.make topic_communicate/CMakeFiles/topic_communicate_genpy.dir/build
+.PHONY : topic_communicate_genpy/fast
 
 src/listener.o: src/listener.cpp.o
 
@@ -223,6 +433,60 @@ src/listener.s: src/listener.cpp.s
 src/listener.cpp.s:
 	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/listener.dir/build.make topic_communicate/CMakeFiles/listener.dir/src/listener.cpp.s
 .PHONY : src/listener.cpp.s
+
+src/publishDIYmsg.o: src/publishDIYmsg.cpp.o
+
+.PHONY : src/publishDIYmsg.o
+
+# target to build an object file
+src/publishDIYmsg.cpp.o:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/src/publishDIYmsg.cpp.o
+.PHONY : src/publishDIYmsg.cpp.o
+
+src/publishDIYmsg.i: src/publishDIYmsg.cpp.i
+
+.PHONY : src/publishDIYmsg.i
+
+# target to preprocess a source file
+src/publishDIYmsg.cpp.i:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/src/publishDIYmsg.cpp.i
+.PHONY : src/publishDIYmsg.cpp.i
+
+src/publishDIYmsg.s: src/publishDIYmsg.cpp.s
+
+.PHONY : src/publishDIYmsg.s
+
+# target to generate assembly for a file
+src/publishDIYmsg.cpp.s:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/src/publishDIYmsg.cpp.s
+.PHONY : src/publishDIYmsg.cpp.s
+
+src/subcriberDIYmsg.o: src/subcriberDIYmsg.cpp.o
+
+.PHONY : src/subcriberDIYmsg.o
+
+# target to build an object file
+src/subcriberDIYmsg.cpp.o:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/src/subcriberDIYmsg.cpp.o
+.PHONY : src/subcriberDIYmsg.cpp.o
+
+src/subcriberDIYmsg.i: src/subcriberDIYmsg.cpp.i
+
+.PHONY : src/subcriberDIYmsg.i
+
+# target to preprocess a source file
+src/subcriberDIYmsg.cpp.i:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/src/subcriberDIYmsg.cpp.i
+.PHONY : src/subcriberDIYmsg.cpp.i
+
+src/subcriberDIYmsg.s: src/subcriberDIYmsg.cpp.s
+
+.PHONY : src/subcriberDIYmsg.s
+
+# target to generate assembly for a file
+src/subcriberDIYmsg.cpp.s:
+	cd /home/addpd/roscode/build && $(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/src/subcriberDIYmsg.cpp.s
+.PHONY : src/subcriberDIYmsg.cpp.s
 
 src/talker.o: src/talker.cpp.o
 
@@ -257,18 +521,38 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... edit_cache"
-	@echo "... test"
 	@echo "... install"
 	@echo "... list_install_components"
-	@echo "... rebuild_cache"
+	@echo "... test"
+	@echo "... subcriberDIYmsg"
+	@echo "... publishDIYmsg"
+	@echo "... install/strip"
 	@echo "... listener"
+	@echo "... _topic_communicate_generate_messages_check_deps_student"
+	@echo "... topic_communicate_generate_messages"
+	@echo "... topic_communicate_generate_messages_cpp"
+	@echo "... topic_communicate_gencpp"
+	@echo "... topic_communicate_geneus"
+	@echo "... topic_communicate_genlisp"
+	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... topic_communicate_generate_messages_lisp"
+	@echo "... topic_communicate_generate_messages_eus"
+	@echo "... topic_communicate_gennodejs"
 	@echo "... talker"
+	@echo "... topic_communicate_generate_messages_nodejs"
+	@echo "... topic_communicate_generate_messages_py"
+	@echo "... topic_communicate_genpy"
 	@echo "... src/listener.o"
 	@echo "... src/listener.i"
 	@echo "... src/listener.s"
+	@echo "... src/publishDIYmsg.o"
+	@echo "... src/publishDIYmsg.i"
+	@echo "... src/publishDIYmsg.s"
+	@echo "... src/subcriberDIYmsg.o"
+	@echo "... src/subcriberDIYmsg.i"
+	@echo "... src/subcriberDIYmsg.s"
 	@echo "... src/talker.o"
 	@echo "... src/talker.i"
 	@echo "... src/talker.s"
