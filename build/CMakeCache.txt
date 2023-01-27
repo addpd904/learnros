@@ -406,6 +406,12 @@ catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/noetic/share/cpp_common/cmake
 
+//Value Computed by CMake
+example_BINARY_DIR:STATIC=/home/addpd/roscode/build/example
+
+//Value Computed by CMake
+example_SOURCE_DIR:STATIC=/home/addpd/roscode/src/example
+
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/noetic/share/gencpp/cmake
 
@@ -423,6 +429,9 @@ gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 gmock_BINARY_DIR:STATIC=/home/addpd/roscode/build/gtest/googlemock
@@ -479,6 +488,18 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
 
+//Value Computed by CMake
+mylaunch_BINARY_DIR:STATIC=/home/addpd/roscode/build/mylaunch
+
+//Value Computed by CMake
+mylaunch_SOURCE_DIR:STATIC=/home/addpd/roscode/src/mylaunch
+
+//Value Computed by CMake
+parameterserve_BINARY_DIR:STATIC=/home/addpd/roscode/build/parameterserve
+
+//Value Computed by CMake
+parameterserve_SOURCE_DIR:STATIC=/home/addpd/roscode/src/parameterserve
+
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
 
@@ -501,6 +522,12 @@ rospy_DIR:PATH=/opt/ros/noetic/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
 
 //Value Computed by CMake
+servecommunicate_BINARY_DIR:STATIC=/home/addpd/roscode/build/servecommunicate
+
+//Value Computed by CMake
+servecommunicate_SOURCE_DIR:STATIC=/home/addpd/roscode/src/servecommunicate
+
+//Value Computed by CMake
 stage1_BINARY_DIR:STATIC=/home/addpd/roscode/build/stage1
 
 //Value Computed by CMake
@@ -509,11 +536,17 @@ stage1_SOURCE_DIR:STATIC=/home/addpd/roscode/src/stage1
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
+
 //Value Computed by CMake
 topic_communicate_BINARY_DIR:STATIC=/home/addpd/roscode/build/topic_communicate
 
 //Value Computed by CMake
 topic_communicate_SOURCE_DIR:STATIC=/home/addpd/roscode/src/topic_communicate
+
+//The directory containing a CMake configuration file for turtlesim.
+turtlesim_DIR:PATH=/opt/ros/noetic/share/turtlesim/cmake
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/noetic/share/xmlrpcpp/cmake
@@ -666,7 +699,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

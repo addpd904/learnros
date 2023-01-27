@@ -1,0 +1,8 @@
+prefix=/home/addpd/roscode/install
+
+Name: parameterserve
+Description: Description of parameterserve
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -10,6 +10,7 @@
                 "/usr/include/**",
                 "/opt/ros/noetic/include",
                 "/home/addpd/roscode/devel/include/**",
+                "${workspaceFolder}/devel/include/**",
                 "${workspaceFolder}/devel/include"
             ],
             "name": "ROS",

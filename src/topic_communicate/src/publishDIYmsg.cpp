@@ -4,6 +4,7 @@ int main(int argc,char * argv[]){
     setlocale(LC_ALL,"");
     ros::init(argc,argv,"publisher");
     ros::NodeHandle nh;
+    //student :type of msg
     ros::Publisher pub=nh.advertise<topic_communicate::student>("dance",10);
     topic_communicate::student stu;
     stu.name ="zs";

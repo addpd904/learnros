@@ -5,5 +5,8 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
-subdirs("stage1")
+subdirs("mylaunch")
+subdirs("parameterserve")
+subdirs("servecommunicate")
 subdirs("topic_communicate")
+subdirs("example")

@@ -8,4 +8,3 @@
 
 # modified environment variables
 export PWD='/home/addpd/roscode/build'
-export PYTHONPATH="/home/addpd/roscode/devel/lib/python3/dist-packages:$PYTHONPATH"

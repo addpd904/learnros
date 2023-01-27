@@ -11,6 +11,7 @@ int main(int a,char * c[]){
     ros::NodeHandle nh;
     //2.get a pubblisher object
     //rapmusic:topic's name;10 :buffer space
+    //string :type of msg
     ros::Publisher pub=nh.advertise<std_msgs::String>("rapmusic",10);
     //get a string object
     std_msgs::String msg;

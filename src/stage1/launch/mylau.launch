@@ -1,5 +1,0 @@
-<launch>
-<!-- pkg:package name   type:filename   name:diy name -->
-    <node pkg="turtlesim" type="turtlesim_node" name="turtlesgui"/>
-    <node pkg="turtlesim" type="turtle_teleop_key" name="turtleskey"/>
-</launch>
