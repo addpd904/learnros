@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /home/addpd/roscode/build
 
 # The main recursive "all" target.
 all: gtest/all
+all: commonApi/all
 all: mylaunch/all
 all: parameterserve/all
 all: servecommunicate/all
@@ -64,6 +65,7 @@ all: example/all
 
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
+preinstall: commonApi/preinstall
 preinstall: mylaunch/preinstall
 preinstall: parameterserve/preinstall
 preinstall: servecommunicate/preinstall
@@ -79,6 +81,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
+clean: commonApi/clean
 clean: mylaunch/clean
 clean: parameterserve/clean
 clean: servecommunicate/clean
@@ -86,6 +89,39 @@ clean: topic_communicate/clean
 clean: example/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory commonApi
+
+# Recursive "all" directory target.
+commonApi/all: commonApi/CMakeFiles/common_api.dir/all
+
+.PHONY : commonApi/all
+
+# Recursive "preinstall" directory target.
+commonApi/preinstall:
+
+.PHONY : commonApi/preinstall
+
+# Recursive "clean" directory target.
+commonApi/clean: commonApi/CMakeFiles/common_api.dir/clean
+commonApi/clean: commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+commonApi/clean: commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+commonApi/clean: commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+commonApi/clean: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+commonApi/clean: commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/roscpp_generate_messages_py.dir/clean
+commonApi/clean: commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+commonApi/clean: commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+commonApi/clean: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+commonApi/clean: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+commonApi/clean: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+
+.PHONY : commonApi/clean
 
 #=============================================================================
 # Directory level rules for directory example
@@ -195,21 +231,7 @@ mylaunch/preinstall:
 .PHONY : mylaunch/preinstall
 
 # Recursive "clean" directory target.
-mylaunch/clean: mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-mylaunch/clean: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+mylaunch/clean:
 
 .PHONY : mylaunch/clean
 
@@ -446,7 +468,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=7,8 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=9,10 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -473,7 +495,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=5,6 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=7,8 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -500,7 +522,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=11,12 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=13,14 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -527,7 +549,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=9,10 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=11,12 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -548,409 +570,450 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir
+# Target rules for target commonApi/CMakeFiles/common_api.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/roscpp_generate_messages_py.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+commonApi/CMakeFiles/common_api.dir/all: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f commonApi/CMakeFiles/common_api.dir/build.make commonApi/CMakeFiles/common_api.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/common_api.dir/build.make commonApi/CMakeFiles/common_api.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=3,4 "Built target common_api"
+.PHONY : commonApi/CMakeFiles/common_api.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/common_api.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/common_api.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : commonApi/CMakeFiles/common_api.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_py: mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+common_api: commonApi/CMakeFiles/common_api.dir/rule
+
+.PHONY : common_api
+
+# clean rule for target.
+commonApi/CMakeFiles/common_api.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/common_api.dir/build.make commonApi/CMakeFiles/common_api.dir/clean
+.PHONY : commonApi/CMakeFiles/common_api.dir/clean
+
+#=============================================================================
+# Target rules for target commonApi/CMakeFiles/std_msgs_generate_messages_py.dir
+
+# All Build rule for target.
+commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all
+
+# Build rule for subdir invocation for target.
+commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/rule
 
 .PHONY : std_msgs_generate_messages_py
 
 # clean rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/clean
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+# Target rules for target commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_nodejs"
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_nodejs: mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+std_msgs_generate_messages_nodejs: commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : std_msgs_generate_messages_nodejs
 
 # clean rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir
+# Target rules for target commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_cpp"
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+roscpp_generate_messages_cpp: commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
 
 .PHONY : roscpp_generate_messages_cpp
 
 # clean rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir
+# Target rules for target commonApi/CMakeFiles/roscpp_generate_messages_eus.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/build
+commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_eus"
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/all
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_eus: mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/rule
+roscpp_generate_messages_eus: commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/rule
 
 .PHONY : roscpp_generate_messages_eus
 
 # clean rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/clean
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/clean
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
+# Target rules for target commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_nodejs"
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_nodejs: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
+rosgraph_msgs_generate_messages_nodejs: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_nodejs
 
 # clean rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir
+# Target rules for target commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_lisp: mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+std_msgs_generate_messages_lisp: commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : std_msgs_generate_messages_lisp
 
 # clean rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/roscpp_generate_messages_py.dir
+# Target rules for target commonApi/CMakeFiles/roscpp_generate_messages_py.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/build
+commonApi/CMakeFiles/roscpp_generate_messages_py.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_py.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_py.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_py.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_py"
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/all
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/roscpp_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/roscpp_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_py: mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/rule
+roscpp_generate_messages_py: commonApi/CMakeFiles/roscpp_generate_messages_py.dir/rule
 
 .PHONY : roscpp_generate_messages_py
 
 # clean rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/clean
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_py.dir/clean
+commonApi/CMakeFiles/roscpp_generate_messages_py.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_py.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_py.dir/clean
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir
+# Target rules for target commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_eus"
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_eus: mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+std_msgs_generate_messages_eus: commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
 
 .PHONY : std_msgs_generate_messages_eus
 
 # clean rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir
+# Target rules for target commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_nodejs"
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_nodejs: mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
+roscpp_generate_messages_nodejs: commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/rule
 
 .PHONY : roscpp_generate_messages_nodejs
 
 # clean rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+# Target rules for target commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_cpp"
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+rosgraph_msgs_generate_messages_cpp: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_cpp
 
 # clean rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+std_msgs_generate_messages_cpp: commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
 
 .PHONY : std_msgs_generate_messages_cpp
 
 # clean rule for target.
-mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
+# Target rules for target commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_eus"
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_eus: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+rosgraph_msgs_generate_messages_eus: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_eus
 
 # clean rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+# Target rules for target commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_lisp"
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+rosgraph_msgs_generate_messages_lisp: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_lisp
 
 # clean rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir
+# Target rules for target commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target roscpp_generate_messages_lisp"
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_lisp: mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+roscpp_generate_messages_lisp: commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 
 .PHONY : roscpp_generate_messages_lisp
 
 # clean rule for target.
-mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
-.PHONY : mylaunch/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
+.PHONY : commonApi/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 
 #=============================================================================
-# Target rules for target mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+# Target rules for target commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
 
 # All Build rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/depend
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num= "Built target rosgraph_msgs_generate_messages_py"
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rosgraph_msgs_generate_messages_py: mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+rosgraph_msgs_generate_messages_py: commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
 
 .PHONY : rosgraph_msgs_generate_messages_py
 
 # clean rule for target.
-mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
-.PHONY : mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
+	$(MAKE) -f commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
+.PHONY : commonApi/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean
 
 #=============================================================================
 # Target rules for target parameterserve/CMakeFiles/getparameter.dir
@@ -959,7 +1022,7 @@ mylaunch/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/clean:
 parameterserve/CMakeFiles/getparameter.dir/all:
 	$(MAKE) -f parameterserve/CMakeFiles/getparameter.dir/build.make parameterserve/CMakeFiles/getparameter.dir/depend
 	$(MAKE) -f parameterserve/CMakeFiles/getparameter.dir/build.make parameterserve/CMakeFiles/getparameter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=3,4 "Built target getparameter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=5,6 "Built target getparameter"
 .PHONY : parameterserve/CMakeFiles/getparameter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -986,7 +1049,7 @@ parameterserve/CMakeFiles/getparameter.dir/clean:
 parameterserve/CMakeFiles/setparameter.dir/all:
 	$(MAKE) -f parameterserve/CMakeFiles/setparameter.dir/build.make parameterserve/CMakeFiles/setparameter.dir/depend
 	$(MAKE) -f parameterserve/CMakeFiles/setparameter.dir/build.make parameterserve/CMakeFiles/setparameter.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=28,29 "Built target setparameter"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=30,31 "Built target setparameter"
 .PHONY : parameterserve/CMakeFiles/setparameter.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1122,11 +1185,11 @@ servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/clean:
 # Target rules for target servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir
 
 # All Build rule for target.
-servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/all: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=18,19 "Built target servecommunicate_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=20,21 "Built target servecommunicate_generate_messages_eus"
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1150,11 +1213,11 @@ servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/clean:
 # Target rules for target servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir
 
 # All Build rule for target.
-servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/all: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=17 "Built target servecommunicate_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=19 "Built target servecommunicate_generate_messages_cpp"
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1205,11 +1268,11 @@ servecommunicate/CMakeFiles/servecommunicate_geneus.dir/clean:
 # Target rules for target servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir
 
 # All Build rule for target.
-servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/all: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=20 "Built target servecommunicate_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=22 "Built target servecommunicate_generate_messages_lisp"
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1233,11 +1296,11 @@ servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/clean:
 # Target rules for target servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir
 
 # All Build rule for target.
-servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/all: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=21 "Built target servecommunicate_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=23 "Built target servecommunicate_generate_messages_nodejs"
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1342,11 +1405,11 @@ servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/clean:
 # Target rules for target servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir
 
 # All Build rule for target.
-servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/all
+servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/all: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=22,23 "Built target servecommunicate_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=24,25 "Built target servecommunicate_generate_messages_py"
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1373,7 +1436,7 @@ servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/clean:
 servecommunicate/CMakeFiles/server.dir/all: servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/all
 	$(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/depend
 	$(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=24,25 "Built target server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=26,27 "Built target server"
 .PHONY : servecommunicate/CMakeFiles/server.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1400,7 +1463,7 @@ servecommunicate/CMakeFiles/server.dir/clean:
 topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build.make topic_communicate/CMakeFiles/subcriberDIYmsg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=30,31 "Built target subcriberDIYmsg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=32,33 "Built target subcriberDIYmsg"
 .PHONY : topic_communicate/CMakeFiles/subcriberDIYmsg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1427,7 +1490,7 @@ topic_communicate/CMakeFiles/subcriberDIYmsg.dir/clean:
 topic_communicate/CMakeFiles/publishDIYmsg.dir/all: topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/publishDIYmsg.dir/build.make topic_communicate/CMakeFiles/publishDIYmsg.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=15,16 "Built target publishDIYmsg"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=17,18 "Built target publishDIYmsg"
 .PHONY : topic_communicate/CMakeFiles/publishDIYmsg.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1454,7 +1517,7 @@ topic_communicate/CMakeFiles/publishDIYmsg.dir/clean:
 topic_communicate/CMakeFiles/listener.dir/all:
 	$(MAKE) -f topic_communicate/CMakeFiles/listener.dir/build.make topic_communicate/CMakeFiles/listener.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/listener.dir/build.make topic_communicate/CMakeFiles/listener.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=13,14 "Built target listener"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=15,16 "Built target listener"
 .PHONY : topic_communicate/CMakeFiles/listener.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1536,11 +1599,11 @@ topic_communicate/CMakeFiles/topic_communicate_generate_messages.dir/clean:
 # Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir
 
 # All Build rule for target.
-topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=34 "Built target topic_communicate_generate_messages_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=36 "Built target topic_communicate_generate_messages_cpp"
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1645,11 +1708,11 @@ topic_communicate/CMakeFiles/topic_communicate_genlisp.dir/clean:
 # Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir
 
 # All Build rule for target.
-topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=37 "Built target topic_communicate_generate_messages_lisp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=39 "Built target topic_communicate_generate_messages_lisp"
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1673,11 +1736,11 @@ topic_communicate/CMakeFiles/topic_communicate_generate_messages_lisp.dir/clean:
 # Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir
 
 # All Build rule for target.
-topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_eus.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_eus.dir/all
 topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=35,36 "Built target topic_communicate_generate_messages_eus"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=37,38 "Built target topic_communicate_generate_messages_eus"
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_eus.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1731,7 +1794,7 @@ topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean:
 topic_communicate/CMakeFiles/talker.dir/all:
 	$(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/talker.dir/build.make topic_communicate/CMakeFiles/talker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=32,33 "Built target talker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=34,35 "Built target talker"
 .PHONY : topic_communicate/CMakeFiles/talker.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1755,11 +1818,11 @@ topic_communicate/CMakeFiles/talker.dir/clean:
 # Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir
 
 # All Build rule for target.
-topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_nodejs.dir/all
 topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=38 "Built target topic_communicate_generate_messages_nodejs"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=40 "Built target topic_communicate_generate_messages_nodejs"
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1783,11 +1846,11 @@ topic_communicate/CMakeFiles/topic_communicate_generate_messages_nodejs.dir/clea
 # Target rules for target topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir
 
 # All Build rule for target.
-topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all: mylaunch/CMakeFiles/std_msgs_generate_messages_py.dir/all
+topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all: commonApi/CMakeFiles/std_msgs_generate_messages_py.dir/all
 topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all: topic_communicate/CMakeFiles/_topic_communicate_generate_messages_check_deps_student.dir/all
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/depend
 	$(MAKE) -f topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build.make topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=39,40 "Built target topic_communicate_generate_messages_py"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=41,42 "Built target topic_communicate_generate_messages_py"
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_generate_messages_py.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1841,7 +1904,7 @@ topic_communicate/CMakeFiles/topic_communicate_genpy.dir/clean:
 example/CMakeFiles/servicecom_generate.dir/all:
 	$(MAKE) -f example/CMakeFiles/servicecom_generate.dir/build.make example/CMakeFiles/servicecom_generate.dir/depend
 	$(MAKE) -f example/CMakeFiles/servicecom_generate.dir/build.make example/CMakeFiles/servicecom_generate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=26,27 "Built target servicecom_generate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=28,29 "Built target servicecom_generate"
 .PHONY : example/CMakeFiles/servicecom_generate.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1868,7 +1931,7 @@ example/CMakeFiles/servicecom_generate.dir/clean:
 example/CMakeFiles/topiccom_getpose.dir/all:
 	$(MAKE) -f example/CMakeFiles/topiccom_getpose.dir/build.make example/CMakeFiles/topiccom_getpose.dir/depend
 	$(MAKE) -f example/CMakeFiles/topiccom_getpose.dir/build.make example/CMakeFiles/topiccom_getpose.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=43,44 "Built target topiccom_getpose"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=45,46 "Built target topiccom_getpose"
 .PHONY : example/CMakeFiles/topiccom_getpose.dir/all
 
 # Build rule for subdir invocation for target.
@@ -2057,7 +2120,7 @@ example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
 example/CMakeFiles/topiccomPub_tur_cir.dir/all:
 	$(MAKE) -f example/CMakeFiles/topiccomPub_tur_cir.dir/build.make example/CMakeFiles/topiccomPub_tur_cir.dir/depend
 	$(MAKE) -f example/CMakeFiles/topiccomPub_tur_cir.dir/build.make example/CMakeFiles/topiccomPub_tur_cir.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=41,42 "Built target topiccomPub_tur_cir"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=43,44 "Built target topiccomPub_tur_cir"
 .PHONY : example/CMakeFiles/topiccomPub_tur_cir.dir/all
 
 # Build rule for subdir invocation for target.

@@ -1,2 +1,2 @@
-example:mylaunch:parameterserve:servecommunicate:topic_communicate
+commonApi:example:mylaunch:parameterserve:servecommunicate:topic_communicate
 -DCATKIN_DEVEL_PREFIX=/home/addpd/roscode/devel -DCMAKE_INSTALL_PREFIX=/home/addpd/roscode/install -G Unix Makefiles
