@@ -5,7 +5,7 @@ int main(int a,char * c[]){
     //solve chinese messy code
     setlocale(LC_ALL,"");
     //init talker node(process)
-    ros::init(a,c,"talker");
+    ros::init(a,c,"talker",ros::init_options::AnonymousName);
     //a.get pubblisher object
     //1.get a handle
     ros::NodeHandle nh;
@@ -29,7 +29,10 @@ int main(int a,char * c[]){
         ros::Duration(3).sleep();
         pub.publish(msg);
         //print log
-        ROS_INFO("rap%s",msg.data.c_str());
+        if(a>=2){
+        ROS_INFO("%s",c[1]);
+        }
+        ROS_INFO("rap %s",msg.data.c_str());
         rate.sleep();
     }
     return 0;

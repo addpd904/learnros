@@ -1,0 +1,50 @@
+myTurtle:
+  background_b: 255
+  background_g: 86
+  background_r: 69
+mygroup:
+  mypar4: true
+myns:
+  mytalker3:
+    mypar1: 20
+mypar2: true
+mypar3: 33
+mypar4: 33
+rosdistro: 'noetic
+
+  '
+roslaunch:
+  uris:
+    host_ubuntu__33413: http://ubuntu:33413/
+    host_ubuntu__34509: http://ubuntu:34509/
+    host_ubuntu__34843: http://ubuntu:34843/
+    host_ubuntu__35263: http://ubuntu:35263/
+    host_ubuntu__35643: http://ubuntu:35643/
+    host_ubuntu__35701: http://ubuntu:35701/
+    host_ubuntu__35937: http://ubuntu:35937/
+    host_ubuntu__36279: http://ubuntu:36279/
+    host_ubuntu__36379: http://ubuntu:36379/
+    host_ubuntu__37153: http://ubuntu:37153/
+    host_ubuntu__37667: http://ubuntu:37667/
+    host_ubuntu__37769: http://ubuntu:37769/
+    host_ubuntu__39135: http://ubuntu:39135/
+    host_ubuntu__39329: http://ubuntu:39329/
+    host_ubuntu__39357: http://ubuntu:39357/
+    host_ubuntu__40247: http://ubuntu:40247/
+    host_ubuntu__41799: http://ubuntu:41799/
+    host_ubuntu__42467: http://ubuntu:42467/
+    host_ubuntu__42537: http://ubuntu:42537/
+    host_ubuntu__42555: http://ubuntu:42555/
+    host_ubuntu__42859: http://ubuntu:42859/
+    host_ubuntu__42977: http://ubuntu:42977/
+    host_ubuntu__43293: http://ubuntu:43293/
+    host_ubuntu__43765: http://ubuntu:43765/
+    host_ubuntu__44327: http://ubuntu:44327/
+    host_ubuntu__45219: http://ubuntu:45219/
+    host_ubuntu__45561: http://ubuntu:45561/
+    host_ubuntu__46119: http://ubuntu:46119/
+    host_ubuntu__46713: http://ubuntu:46713/
+rosversion: '1.15.15
+
+  '
+run_id: 94948ebc-a169-11ed-b0d5-99c5154f7c77

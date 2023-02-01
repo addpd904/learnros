@@ -131,6 +131,8 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/addpd/roscode/build/gtest/cmake_install.cmake")
+  include("/home/addpd/roscode/build/chapter4launch/cmake_install.cmake")
+  include("/home/addpd/roscode/build/chapter4metaPackage/cmake_install.cmake")
   include("/home/addpd/roscode/build/commonApi/cmake_install.cmake")
   include("/home/addpd/roscode/build/mylaunch/cmake_install.cmake")
   include("/home/addpd/roscode/build/parameterserve/cmake_install.cmake")

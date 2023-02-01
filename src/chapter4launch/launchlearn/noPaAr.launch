@@ -1,0 +1,25 @@
+<launch>
+    <arg name="age"/>
+    <!-- a. node -->
+    <node pkg="topic_communicate" type="talker" name="mytalker1" args="tabbles basketball" output="screen" ns="mynamespace"></node>
+    <node pkg="topic_communicate" type="talker" name="mytalker2"  output="screen" respawn="false" required="false" clear_params="false"></node>
+    <!-- b.param -->
+    <!-- 1.put the label in the node label. value:the patameter will be appended a ns -->
+    <node pkg="topic_communicate" type="talker" name="mytalker3" args="tabbles" output="screen" ns="myns">
+        <param name="mypar1" value="20" type="int"/>
+    </node>
+    <!-- 2.put the label out of node label. effect:no namespace -->
+    <param name="mypar2" value="true" type="bool"/>
+    <param name="mypar3" value="$(arg age)" type="int"/>
+    <!-- c.rosparam save parameter to file.load parameter from file-->
+    <rosparam command="dump" file="$(find chapter4launch)/my.yaml"/>
+    <!-- d.group append a namespace for every sublsbel-->
+    <group ns="mygroup">
+    <param name="mypar4" value="true" type="bool"/>
+    </group>
+    <!-- e.remap :remap topic-->
+    <!-- modify subscription's topic -->
+    <node pkg="turtlesim" type="turtlesim_node"  name="myTurtle" output="screen" >
+        <remap from="/turtle1/cmd_vel" to="/mycontrol"/>
+    </node>
+</launch>
