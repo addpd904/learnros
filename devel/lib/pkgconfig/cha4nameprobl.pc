@@ -1,0 +1,8 @@
+prefix=/home/addpd/roscode/devel
+
+Name: cha4nameprobl
+Description: Description of cha4nameprobl
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/addpd/roscode/devel
+
+Name: cha5TF
+Description: Description of cha5TF
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

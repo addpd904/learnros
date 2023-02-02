@@ -56,6 +56,18 @@ CMAKE_BINARY_DIR = /home/addpd/roscode/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # Special rule for the target list_install_components
 list_install_components:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
@@ -111,18 +123,6 @@ install/local/fast: preinstall/fast
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -168,51 +168,6 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-example/CMakeFiles/servicecom_generate.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/servicecom_generate.dir/rule
-.PHONY : example/CMakeFiles/servicecom_generate.dir/rule
-
-# Convenience name for target.
-servicecom_generate: example/CMakeFiles/servicecom_generate.dir/rule
-
-.PHONY : servicecom_generate
-
-# fast build rule for target.
-servicecom_generate/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/servicecom_generate.dir/build.make example/CMakeFiles/servicecom_generate.dir/build
-.PHONY : servicecom_generate/fast
-
-# Convenience name for target.
-example/CMakeFiles/topiccom_getpose.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/topiccom_getpose.dir/rule
-.PHONY : example/CMakeFiles/topiccom_getpose.dir/rule
-
-# Convenience name for target.
-topiccom_getpose: example/CMakeFiles/topiccom_getpose.dir/rule
-
-.PHONY : topiccom_getpose
-
-# fast build rule for target.
-topiccom_getpose/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/topiccom_getpose.dir/build.make example/CMakeFiles/topiccom_getpose.dir/build
-.PHONY : topiccom_getpose/fast
-
-# Convenience name for target.
-example/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-.PHONY : example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_py: example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
-
-.PHONY : std_srvs_generate_messages_py
-
-# fast build rule for target.
-std_srvs_generate_messages_py/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/std_srvs_generate_messages_py.dir/build.make example/CMakeFiles/std_srvs_generate_messages_py.dir/build
-.PHONY : std_srvs_generate_messages_py/fast
-
-# Convenience name for target.
 example/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule:
 	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
 .PHONY : example/CMakeFiles/turtlesim_generate_messages_cpp.dir/rule
@@ -226,126 +181,6 @@ turtlesim_generate_messages_cpp: example/CMakeFiles/turtlesim_generate_messages_
 turtlesim_generate_messages_cpp/fast:
 	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/turtlesim_generate_messages_cpp.dir/build.make example/CMakeFiles/turtlesim_generate_messages_cpp.dir/build
 .PHONY : turtlesim_generate_messages_cpp/fast
-
-# Convenience name for target.
-example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-.PHONY : example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_eus: example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_eus
-
-# fast build rule for target.
-geometry_msgs_generate_messages_eus/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build.make example/CMakeFiles/geometry_msgs_generate_messages_eus.dir/build
-.PHONY : geometry_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-.PHONY : example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_srvs_generate_messages_nodejs: example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_srvs_generate_messages_nodejs
-
-# fast build rule for target.
-std_srvs_generate_messages_nodejs/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
-.PHONY : std_srvs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-example/CMakeFiles/turtlesim_generate_messages_py.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
-.PHONY : example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
-
-# Convenience name for target.
-turtlesim_generate_messages_py: example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
-
-.PHONY : turtlesim_generate_messages_py
-
-# fast build rule for target.
-turtlesim_generate_messages_py/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/turtlesim_generate_messages_py.dir/build.make example/CMakeFiles/turtlesim_generate_messages_py.dir/build
-.PHONY : turtlesim_generate_messages_py/fast
-
-# Convenience name for target.
-example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-.PHONY : example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_lisp: example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_lisp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_lisp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build.make example/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
-.PHONY : geometry_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-example/CMakeFiles/topiccomPub_tur_cir.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/topiccomPub_tur_cir.dir/rule
-.PHONY : example/CMakeFiles/topiccomPub_tur_cir.dir/rule
-
-# Convenience name for target.
-topiccomPub_tur_cir: example/CMakeFiles/topiccomPub_tur_cir.dir/rule
-
-.PHONY : topiccomPub_tur_cir
-
-# fast build rule for target.
-topiccomPub_tur_cir/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/topiccomPub_tur_cir.dir/build.make example/CMakeFiles/topiccomPub_tur_cir.dir/build
-.PHONY : topiccomPub_tur_cir/fast
-
-# Convenience name for target.
-example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-.PHONY : example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_cpp: example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_cpp
-
-# fast build rule for target.
-geometry_msgs_generate_messages_cpp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build.make example/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/build
-.PHONY : geometry_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-.PHONY : example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-geometry_msgs_generate_messages_nodejs: example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : geometry_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-geometry_msgs_generate_messages_nodejs/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make example/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
-.PHONY : geometry_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
-.PHONY : example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-turtlesim_generate_messages_lisp: example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
-
-.PHONY : turtlesim_generate_messages_lisp
-
-# fast build rule for target.
-turtlesim_generate_messages_lisp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/turtlesim_generate_messages_lisp.dir/build.make example/CMakeFiles/turtlesim_generate_messages_lisp.dir/build
-.PHONY : turtlesim_generate_messages_lisp/fast
 
 # Convenience name for target.
 example/CMakeFiles/turtlesim_generate_messages_eus.dir/rule:
@@ -363,6 +198,21 @@ turtlesim_generate_messages_eus/fast:
 .PHONY : turtlesim_generate_messages_eus/fast
 
 # Convenience name for target.
+example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
+.PHONY : example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_lisp: example/CMakeFiles/turtlesim_generate_messages_lisp.dir/rule
+
+.PHONY : turtlesim_generate_messages_lisp
+
+# fast build rule for target.
+turtlesim_generate_messages_lisp/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/turtlesim_generate_messages_lisp.dir/build.make example/CMakeFiles/turtlesim_generate_messages_lisp.dir/build
+.PHONY : turtlesim_generate_messages_lisp/fast
+
+# Convenience name for target.
 example/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule:
 	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule
 .PHONY : example/CMakeFiles/turtlesim_generate_messages_nodejs.dir/rule
@@ -378,19 +228,19 @@ turtlesim_generate_messages_nodejs/fast:
 .PHONY : turtlesim_generate_messages_nodejs/fast
 
 # Convenience name for target.
-example/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
-.PHONY : example/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+example/CMakeFiles/std_srvs_generate_messages_py.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
+.PHONY : example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-geometry_msgs_generate_messages_py: example/CMakeFiles/geometry_msgs_generate_messages_py.dir/rule
+std_srvs_generate_messages_py: example/CMakeFiles/std_srvs_generate_messages_py.dir/rule
 
-.PHONY : geometry_msgs_generate_messages_py
+.PHONY : std_srvs_generate_messages_py
 
 # fast build rule for target.
-geometry_msgs_generate_messages_py/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/geometry_msgs_generate_messages_py.dir/build.make example/CMakeFiles/geometry_msgs_generate_messages_py.dir/build
-.PHONY : geometry_msgs_generate_messages_py/fast
+std_srvs_generate_messages_py/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/std_srvs_generate_messages_py.dir/build.make example/CMakeFiles/std_srvs_generate_messages_py.dir/build
+.PHONY : std_srvs_generate_messages_py/fast
 
 # Convenience name for target.
 example/CMakeFiles/std_srvs_generate_messages_cpp.dir/rule:
@@ -436,6 +286,81 @@ std_srvs_generate_messages_lisp: example/CMakeFiles/std_srvs_generate_messages_l
 std_srvs_generate_messages_lisp/fast:
 	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/std_srvs_generate_messages_lisp.dir/build.make example/CMakeFiles/std_srvs_generate_messages_lisp.dir/build
 .PHONY : std_srvs_generate_messages_lisp/fast
+
+# Convenience name for target.
+example/CMakeFiles/turtlesim_generate_messages_py.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
+.PHONY : example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
+
+# Convenience name for target.
+turtlesim_generate_messages_py: example/CMakeFiles/turtlesim_generate_messages_py.dir/rule
+
+.PHONY : turtlesim_generate_messages_py
+
+# fast build rule for target.
+turtlesim_generate_messages_py/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/turtlesim_generate_messages_py.dir/build.make example/CMakeFiles/turtlesim_generate_messages_py.dir/build
+.PHONY : turtlesim_generate_messages_py/fast
+
+# Convenience name for target.
+example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+.PHONY : example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_srvs_generate_messages_nodejs: example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_srvs_generate_messages_nodejs
+
+# fast build rule for target.
+std_srvs_generate_messages_nodejs/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build.make example/CMakeFiles/std_srvs_generate_messages_nodejs.dir/build
+.PHONY : std_srvs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+example/CMakeFiles/topiccomPub_tur_cir.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/topiccomPub_tur_cir.dir/rule
+.PHONY : example/CMakeFiles/topiccomPub_tur_cir.dir/rule
+
+# Convenience name for target.
+topiccomPub_tur_cir: example/CMakeFiles/topiccomPub_tur_cir.dir/rule
+
+.PHONY : topiccomPub_tur_cir
+
+# fast build rule for target.
+topiccomPub_tur_cir/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/topiccomPub_tur_cir.dir/build.make example/CMakeFiles/topiccomPub_tur_cir.dir/build
+.PHONY : topiccomPub_tur_cir/fast
+
+# Convenience name for target.
+example/CMakeFiles/topiccom_getpose.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/topiccom_getpose.dir/rule
+.PHONY : example/CMakeFiles/topiccom_getpose.dir/rule
+
+# Convenience name for target.
+topiccom_getpose: example/CMakeFiles/topiccom_getpose.dir/rule
+
+.PHONY : topiccom_getpose
+
+# fast build rule for target.
+topiccom_getpose/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/topiccom_getpose.dir/build.make example/CMakeFiles/topiccom_getpose.dir/build
+.PHONY : topiccom_getpose/fast
+
+# Convenience name for target.
+example/CMakeFiles/servicecom_generate.dir/rule:
+	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 example/CMakeFiles/servicecom_generate.dir/rule
+.PHONY : example/CMakeFiles/servicecom_generate.dir/rule
+
+# Convenience name for target.
+servicecom_generate: example/CMakeFiles/servicecom_generate.dir/rule
+
+.PHONY : servicecom_generate
+
+# fast build rule for target.
+servicecom_generate/fast:
+	cd /home/addpd/roscode/build && $(MAKE) -f example/CMakeFiles/servicecom_generate.dir/build.make example/CMakeFiles/servicecom_generate.dir/build
+.PHONY : servicecom_generate/fast
 
 src/servicecom_generate.o: src/servicecom_generate.cpp.o
 
@@ -524,31 +449,26 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... install"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... servicecom_generate"
-	@echo "... topiccom_getpose"
-	@echo "... std_srvs_generate_messages_py"
 	@echo "... install/local"
 	@echo "... turtlesim_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_eus"
-	@echo "... std_srvs_generate_messages_nodejs"
-	@echo "... turtlesim_generate_messages_py"
-	@echo "... install"
-	@echo "... geometry_msgs_generate_messages_lisp"
-	@echo "... topiccomPub_tur_cir"
-	@echo "... geometry_msgs_generate_messages_cpp"
-	@echo "... geometry_msgs_generate_messages_nodejs"
-	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... turtlesim_generate_messages_eus"
+	@echo "... turtlesim_generate_messages_lisp"
 	@echo "... install/strip"
 	@echo "... turtlesim_generate_messages_nodejs"
-	@echo "... geometry_msgs_generate_messages_py"
+	@echo "... std_srvs_generate_messages_py"
 	@echo "... std_srvs_generate_messages_cpp"
 	@echo "... std_srvs_generate_messages_eus"
 	@echo "... std_srvs_generate_messages_lisp"
+	@echo "... turtlesim_generate_messages_py"
+	@echo "... std_srvs_generate_messages_nodejs"
+	@echo "... topiccomPub_tur_cir"
+	@echo "... topiccom_getpose"
+	@echo "... servicecom_generate"
 	@echo "... src/servicecom_generate.o"
 	@echo "... src/servicecom_generate.i"
 	@echo "... src/servicecom_generate.s"

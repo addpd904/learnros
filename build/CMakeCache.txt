@@ -47,7 +47,7 @@ CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=RelWithDebInfo
+CMAKE_BUILD_TYPE:STRING=
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -376,12 +376,6 @@ SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 //Name of the computer/site where compile is being run
 SITE:STRING=ubuntu
 
-//Value Computed by CMake
-TopicCommunicate_BINARY_DIR:STATIC=/home/addpd/roscode/build/topic_communicate
-
-//Value Computed by CMake
-TopicCommunicate_SOURCE_DIR:STATIC=/home/addpd/roscode/src/topic_communicate
-
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
@@ -400,8 +394,26 @@ _gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for actionlib.
+actionlib_DIR:PATH=/opt/ros/noetic/share/actionlib/cmake
+
+//The directory containing a CMake configuration file for actionlib_msgs.
+actionlib_msgs_DIR:PATH=/opt/ros/noetic/share/actionlib_msgs/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
+
+//Value Computed by CMake
+cha4nameprobl_BINARY_DIR:STATIC=/home/addpd/roscode/build/cha4nameprobl
+
+//Value Computed by CMake
+cha4nameprobl_SOURCE_DIR:STATIC=/home/addpd/roscode/src/cha4nameprobl
+
+//Value Computed by CMake
+cha5TF_BINARY_DIR:STATIC=/home/addpd/roscode/build/cha5TF
+
+//Value Computed by CMake
+cha5TF_SOURCE_DIR:STATIC=/home/addpd/roscode/src/cha5TF
 
 //Value Computed by CMake
 chapter4launch_BINARY_DIR:STATIC=/home/addpd/roscode/build/chapter4launch
@@ -500,6 +512,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 //Path to a library.
 lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
+
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
@@ -530,6 +545,9 @@ roscpp_serialization_DIR:PATH=/opt/ros/noetic/share/roscpp_serialization/cmake
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/noetic/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph.
+rosgraph_DIR:PATH=/opt/ros/noetic/share/rosgraph/cmake
+
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/noetic/share/rosgraph_msgs/cmake
 
@@ -545,17 +563,26 @@ servecommunicate_BINARY_DIR:STATIC=/home/addpd/roscode/build/servecommunicate
 //Value Computed by CMake
 servecommunicate_SOURCE_DIR:STATIC=/home/addpd/roscode/src/servecommunicate
 
-//Value Computed by CMake
-stage1_BINARY_DIR:STATIC=/home/addpd/roscode/build/stage1
-
-//Value Computed by CMake
-stage1_SOURCE_DIR:STATIC=/home/addpd/roscode/src/stage1
-
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
 
 //The directory containing a CMake configuration file for std_srvs.
 std_srvs_DIR:PATH=/opt/ros/noetic/share/std_srvs/cmake
+
+//The directory containing a CMake configuration file for tf2.
+tf2_DIR:PATH=/opt/ros/noetic/share/tf2/cmake
+
+//The directory containing a CMake configuration file for tf2_geometry_msgs.
+tf2_geometry_msgs_DIR:PATH=/opt/ros/noetic/share/tf2_geometry_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_msgs.
+tf2_msgs_DIR:PATH=/opt/ros/noetic/share/tf2_msgs/cmake
+
+//The directory containing a CMake configuration file for tf2_py.
+tf2_py_DIR:PATH=/opt/ros/noetic/share/tf2_py/cmake
+
+//The directory containing a CMake configuration file for tf2_ros.
+tf2_ros_DIR:PATH=/opt/ros/noetic/share/tf2_ros/cmake
 
 //Value Computed by CMake
 topic_communicate_BINARY_DIR:STATIC=/home/addpd/roscode/build/topic_communicate
@@ -717,7 +744,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=12
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=14
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

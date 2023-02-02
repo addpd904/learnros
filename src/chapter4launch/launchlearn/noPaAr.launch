@@ -18,7 +18,7 @@
     <param name="mypar4" value="true" type="bool"/>
     </group>
     <!-- e.remap :remap topic-->
-    <!-- modify subscription's topic -->
+    <!-- modify topic -->
     <node pkg="turtlesim" type="turtlesim_node"  name="myTurtle" output="screen" >
         <remap from="/turtle1/cmd_vel" to="/mycontrol"/>
     </node>
