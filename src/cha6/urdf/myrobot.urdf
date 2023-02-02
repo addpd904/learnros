@@ -1,0 +1,52 @@
+<!-- check if the urdf file is correct: check_urdf  -->
+<!-- check the structure of file:urdf_to_graphiz -->
+<robot name="firstrobot">
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="0.0001"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="base_link">
+        <visual>
+            <!-- set shape -->
+            <geometry>
+                <cylinder radius="0.5" length="0.5"/>
+            </geometry>
+            <!-- set rpy and xyz -->s
+            <!-- rpy:roll pith yaw -->
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+            <!-- set color -->
+            <material name="blue">
+                <!-- RGB  transparency-->
+                <color rgba="0 0 1 0.5" />
+            </material>
+        </visual>
+    </link>
+    <link name="camera">
+        <visual>
+            <geometry>
+                <box size="0.1 0.1 0.1"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
+            <material name="red">
+                <color rgba="1 0 0 0.6"/>
+            </material>
+        </visual>
+    </link>
+    <joint name="base_link2base_footprint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 0.25" rpy="0.0 0.0 0.0"/>
+        
+    </joint>
+    <joint name="camera2baselink" type="continuous">
+        <parent link="base_link"/>
+        <child link="camera"/>
+
+        <origin xyz="0.0 0.0 0.3" rpy="0.0 0.0 0.0"/>
+        <!-- Rotate about the z axis -->
+        <axis xyz="0.0 0.0 1"/>
+    </joint>
+</robot>

@@ -1,0 +1,35 @@
+<!-- xacro to urdf :rosrun xacro xacro xxx.xacro > xxx.urdf -->
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycar">
+    <!-- 1.DIY constant -->
+    <xacro:property name="PI" value="3.14" />
+    <!-- 2.macro :just like function -->
+    <!-- params : the list of parameter -->
+    <xacro:macro name="wheel_func" params="wheel_name flag" >
+    <!-- 3.use variable by ${var name} -->
+        <link name="${wheel_name}_wheel">
+            <visual>
+                <geometry>
+                    <cylinder radius="${wheel_radius}" length="${wheel_length}" />
+                </geometry>
+    <!-- 4.math operation. write in ${} -->
+                <origin xyz="0 0 0" rpy="${PI / 2} 0 0" />
+
+                <material name="wheel_color">
+                    <color rgba="0 0 0 0.3" />
+                </material>
+            </visual>
+        </link>
+             <!-- joint -->
+             <joint name="${wheel_name}2link" type="continuous">
+                <parent link="base_link"  />
+                <child link="${wheel_name}_wheel" />
+
+                <origin xyz="0 ${0.1 * flag} ${(base_link_length / 2 + lidi_space - wheel_radius) * -1}" rpy="0 0 0" />
+                <axis xyz="0 1 0" />
+            </joint>
+    
+        </xacro:macro>
+    <!-- 5.use macro wheel_func -->
+    <xacro:wheel_func wheel_name="left" flag="1" />
+<!-- xacro to urdf :rosrun xacro xacro xxx.xacro > xxx.urdf -->
+</robot>
