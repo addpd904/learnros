@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/cha4nameprobl
+# Install script for directory: /home/addpd904/learnros/src/cha4nameprobl
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/cha4nameprobl/catkin_generated/installspace/cha4nameprobl.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/cha4nameprobl/catkin_generated/installspace/cha4nameprobl.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha4nameprobl/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/cha4nameprobl/catkin_generated/installspace/cha4nameproblConfig.cmake"
-    "/home/addpd/roscode/build/cha4nameprobl/catkin_generated/installspace/cha4nameproblConfig-version.cmake"
+    "/home/addpd904/learnros/build/cha4nameprobl/catkin_generated/installspace/cha4nameproblConfig.cmake"
+    "/home/addpd904/learnros/build/cha4nameprobl/catkin_generated/installspace/cha4nameproblConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha4nameprobl" TYPE FILE FILES "/home/addpd/roscode/src/cha4nameprobl/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha4nameprobl" TYPE FILE FILES "/home/addpd904/learnros/src/cha4nameprobl/package.xml")
 endif()
 

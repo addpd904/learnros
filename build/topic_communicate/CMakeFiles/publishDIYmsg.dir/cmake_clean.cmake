@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/topic_communicate/publishDIYmsg"
-  "/home/addpd/roscode/devel/lib/topic_communicate/publishDIYmsg.pdb"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/publishDIYmsg"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/publishDIYmsg.pdb"
   "CMakeFiles/publishDIYmsg.dir/src/publishDIYmsg.cpp.o"
 )
 

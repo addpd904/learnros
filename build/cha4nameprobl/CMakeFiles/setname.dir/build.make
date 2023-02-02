@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Include any dependencies generated for this target.
 include cha4nameprobl/CMakeFiles/setname.dir/depend.make
@@ -58,17 +58,17 @@ include cha4nameprobl/CMakeFiles/setname.dir/progress.make
 include cha4nameprobl/CMakeFiles/setname.dir/flags.make
 
 cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o: cha4nameprobl/CMakeFiles/setname.dir/flags.make
-cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o: /home/addpd/roscode/src/cha4nameprobl/src/setname.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o"
-	cd /home/addpd/roscode/build/cha4nameprobl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setname.dir/src/setname.cpp.o -c /home/addpd/roscode/src/cha4nameprobl/src/setname.cpp
+cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o: /home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/addpd904/learnros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o"
+	cd /home/addpd904/learnros/build/cha4nameprobl && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/setname.dir/src/setname.cpp.o -c /home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp
 
 cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/setname.dir/src/setname.cpp.i"
-	cd /home/addpd/roscode/build/cha4nameprobl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/addpd/roscode/src/cha4nameprobl/src/setname.cpp > CMakeFiles/setname.dir/src/setname.cpp.i
+	cd /home/addpd904/learnros/build/cha4nameprobl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp > CMakeFiles/setname.dir/src/setname.cpp.i
 
 cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/setname.dir/src/setname.cpp.s"
-	cd /home/addpd/roscode/build/cha4nameprobl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/addpd/roscode/src/cha4nameprobl/src/setname.cpp -o CMakeFiles/setname.dir/src/setname.cpp.s
+	cd /home/addpd904/learnros/build/cha4nameprobl && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp -o CMakeFiles/setname.dir/src/setname.cpp.s
 
 # Object files for target setname
 setname_OBJECTS = \
@@ -77,39 +77,39 @@ setname_OBJECTS = \
 # External object files for target setname
 setname_EXTERNAL_OBJECTS =
 
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/build.make
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libroscpp.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole_log4cxx.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole_backend_interface.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libxmlrpcpp.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libroscpp_serialization.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librostime.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libcpp_common.so
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/addpd/roscode/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/addpd/roscode/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/addpd/roscode/devel/lib/cha4nameprobl/setname"
-	cd /home/addpd/roscode/build/cha4nameprobl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/setname.dir/link.txt --verbose=$(VERBOSE)
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/build.make
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libroscpp.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_chrono.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/librostime.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /opt/ros/noetic/lib/libcpp_common.so
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/addpd904/learnros/devel/lib/cha4nameprobl/setname: cha4nameprobl/CMakeFiles/setname.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/addpd904/learnros/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/addpd904/learnros/devel/lib/cha4nameprobl/setname"
+	cd /home/addpd904/learnros/build/cha4nameprobl && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/setname.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-cha4nameprobl/CMakeFiles/setname.dir/build: /home/addpd/roscode/devel/lib/cha4nameprobl/setname
+cha4nameprobl/CMakeFiles/setname.dir/build: /home/addpd904/learnros/devel/lib/cha4nameprobl/setname
 
 .PHONY : cha4nameprobl/CMakeFiles/setname.dir/build
 
 cha4nameprobl/CMakeFiles/setname.dir/clean:
-	cd /home/addpd/roscode/build/cha4nameprobl && $(CMAKE_COMMAND) -P CMakeFiles/setname.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/cha4nameprobl && $(CMAKE_COMMAND) -P CMakeFiles/setname.dir/cmake_clean.cmake
 .PHONY : cha4nameprobl/CMakeFiles/setname.dir/clean
 
 cha4nameprobl/CMakeFiles/setname.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/cha4nameprobl /home/addpd/roscode/build /home/addpd/roscode/build/cha4nameprobl /home/addpd/roscode/build/cha4nameprobl/CMakeFiles/setname.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/cha4nameprobl /home/addpd904/learnros/build /home/addpd904/learnros/build/cha4nameprobl /home/addpd904/learnros/build/cha4nameprobl/CMakeFiles/setname.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cha4nameprobl/CMakeFiles/setname.dir/depend
 

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/devel/include/topic_communicate/student.h
+/home/addpd904/learnros/devel/include/topic_communicate/student.h
 string
 -
 vector
@@ -22,11 +22,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/addpd/roscode/src/topic_communicate/src/subcriberDIYmsg.cpp
+/home/addpd904/learnros/src/topic_communicate/src/subcriberDIYmsg.cpp
 ros/ros.h
-/home/addpd/roscode/src/topic_communicate/src/ros/ros.h
+/home/addpd904/learnros/src/topic_communicate/src/ros/ros.h
 topic_communicate/student.h
-/home/addpd/roscode/src/topic_communicate/src/topic_communicate/student.h
+/home/addpd904/learnros/src/topic_communicate/src/topic_communicate/student.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

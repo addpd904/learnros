@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/topic_communicate/talker"
-  "/home/addpd/roscode/devel/lib/topic_communicate/talker.pdb"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/talker"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/talker.pdb"
   "CMakeFiles/talker.dir/src/talker.cpp.o"
 )
 

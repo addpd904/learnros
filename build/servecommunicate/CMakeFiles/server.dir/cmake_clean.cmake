@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/servecommunicate/server"
-  "/home/addpd/roscode/devel/lib/servecommunicate/server.pdb"
+  "/home/addpd904/learnros/devel/lib/servecommunicate/server"
+  "/home/addpd904/learnros/devel/lib/servecommunicate/server.pdb"
   "CMakeFiles/server.dir/src/server.cpp.o"
 )
 

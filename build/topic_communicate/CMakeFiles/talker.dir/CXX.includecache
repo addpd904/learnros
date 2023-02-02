@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/topic_communicate/src/talker.cpp
+/home/addpd904/learnros/src/topic_communicate/src/talker.cpp
 ros/ros.h
-/home/addpd/roscode/src/topic_communicate/src/ros/ros.h
+/home/addpd904/learnros/src/topic_communicate/src/ros/ros.h
 std_msgs/String.h
-/home/addpd/roscode/src/topic_communicate/src/std_msgs/String.h
+/home/addpd904/learnros/src/topic_communicate/src/std_msgs/String.h
 sstream
 -
 

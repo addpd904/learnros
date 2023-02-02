@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for _servecommunicate_generate_messages_check_deps_mydata.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/addpd/roscode/build
 include servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/progress.make
 
 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata:
-	cd /home/addpd/roscode/build/servecommunicate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py servecommunicate /home/addpd/roscode/src/servecommunicate/srv/mydata.srv 
+	cd /home/addpd904/learnros/build/servecommunicate && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py servecommunicate /home/addpd904/learnros/src/servecommunicate/srv/mydata.srv 
 
 _servecommunicate_generate_messages_check_deps_mydata: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata
 _servecommunicate_generate_messages_check_deps_mydata: servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build.make
@@ -67,10 +67,10 @@ servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydat
 .PHONY : servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build
 
 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/clean:
-	cd /home/addpd/roscode/build/servecommunicate && $(CMAKE_COMMAND) -P CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/servecommunicate && $(CMAKE_COMMAND) -P CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/cmake_clean.cmake
 .PHONY : servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/clean
 
 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/servecommunicate /home/addpd/roscode/build /home/addpd/roscode/build/servecommunicate /home/addpd/roscode/build/servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/servecommunicate /home/addpd904/learnros/build /home/addpd904/learnros/build/servecommunicate /home/addpd904/learnros/build/servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/depend
 

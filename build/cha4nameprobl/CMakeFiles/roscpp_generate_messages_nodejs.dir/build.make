@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for roscpp_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/build: roscpp_gener
 .PHONY : cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
 
 cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean:
-	cd /home/addpd/roscode/build/cha4nameprobl && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/cha4nameprobl && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/clean
 
 cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/cha4nameprobl /home/addpd/roscode/build /home/addpd/roscode/build/cha4nameprobl /home/addpd/roscode/build/cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/cha4nameprobl /home/addpd904/learnros/build /home/addpd904/learnros/build/cha4nameprobl /home/addpd904/learnros/build/cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cha4nameprobl/CMakeFiles/roscpp_generate_messages_nodejs.dir/depend
 

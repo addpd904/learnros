@@ -6,9 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/parameterserve/src/setparameter.cpp
+/home/addpd904/learnros/src/parameterserve/src/setparameter.cpp
 ros/ros.h
-/home/addpd/roscode/src/parameterserve/src/ros/ros.h
+/home/addpd904/learnros/src/parameterserve/src/ros/ros.h
 iostream
 -
 

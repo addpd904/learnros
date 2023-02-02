@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/parameterserve/setparameter"
-  "/home/addpd/roscode/devel/lib/parameterserve/setparameter.pdb"
+  "/home/addpd904/learnros/devel/lib/parameterserve/setparameter"
+  "/home/addpd904/learnros/devel/lib/parameterserve/setparameter.pdb"
   "CMakeFiles/setparameter.dir/src/setparameter.cpp.o"
 )
 

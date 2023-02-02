@@ -67,14 +67,14 @@ set(mylaunch_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(mylaunch_SOURCE_PREFIX /home/addpd/roscode/src/mylaunch)
-  set(mylaunch_DEVEL_PREFIX /home/addpd/roscode/devel)
+  set(mylaunch_SOURCE_PREFIX /home/addpd904/learnros/src/mylaunch)
+  set(mylaunch_DEVEL_PREFIX /home/addpd904/learnros/devel)
   set(mylaunch_INSTALL_PREFIX "")
   set(mylaunch_PREFIX ${mylaunch_DEVEL_PREFIX})
 else()
   set(mylaunch_SOURCE_PREFIX "")
   set(mylaunch_DEVEL_PREFIX "")
-  set(mylaunch_INSTALL_PREFIX /home/addpd/roscode/install)
+  set(mylaunch_INSTALL_PREFIX /home/addpd904/learnros/install)
   set(mylaunch_PREFIX ${mylaunch_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/addpd/roscode/install/lib;/home/addpd/roscode/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/addpd904/learnros/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

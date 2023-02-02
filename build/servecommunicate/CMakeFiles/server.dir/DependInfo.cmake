@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/addpd/roscode/src/servecommunicate/src/server.cpp" "/home/addpd/roscode/build/servecommunicate/CMakeFiles/server.dir/src/server.cpp.o"
+  "/home/addpd904/learnros/src/servecommunicate/src/server.cpp" "/home/addpd904/learnros/build/servecommunicate/CMakeFiles/server.dir/src/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/addpd/roscode/devel/include"
+  "/home/addpd904/learnros/devel/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

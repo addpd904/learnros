@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/commonApi/src/common_api.cpp
+/home/addpd904/learnros/src/commonApi/src/common_api.cpp
 ros/ros.h
-/home/addpd/roscode/src/commonApi/src/ros/ros.h
+/home/addpd904/learnros/src/commonApi/src/ros/ros.h
 std_msgs/String.h
-/home/addpd/roscode/src/commonApi/src/std_msgs/String.h
+/home/addpd904/learnros/src/commonApi/src/std_msgs/String.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

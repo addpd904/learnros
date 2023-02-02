@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/share/roseus/ros/topic_communicate/manifest.l"
-  "/home/addpd/roscode/devel/share/roseus/ros/topic_communicate/msg/student.l"
+  "/home/addpd904/learnros/devel/share/roseus/ros/topic_communicate/manifest.l"
+  "/home/addpd904/learnros/devel/share/roseus/ros/topic_communicate/msg/student.l"
   "CMakeFiles/topic_communicate_generate_messages_eus"
 )
 

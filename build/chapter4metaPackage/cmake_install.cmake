@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/chapter4metaPackage
+# Install script for directory: /home/addpd904/learnros/src/chapter4metaPackage
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,6 +38,6 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chapter4metaPackage" TYPE FILE FILES "/home/addpd/roscode/src/chapter4metaPackage/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chapter4metaPackage" TYPE FILE FILES "/home/addpd904/learnros/src/chapter4metaPackage/package.xml")
 endif()
 

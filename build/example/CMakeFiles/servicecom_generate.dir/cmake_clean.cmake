@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/example/servicecom_generate"
-  "/home/addpd/roscode/devel/lib/example/servicecom_generate.pdb"
+  "/home/addpd904/learnros/devel/lib/example/servicecom_generate"
+  "/home/addpd904/learnros/devel/lib/example/servicecom_generate.pdb"
   "CMakeFiles/servicecom_generate.dir/src/servicecom_generate.cpp.o"
 )
 

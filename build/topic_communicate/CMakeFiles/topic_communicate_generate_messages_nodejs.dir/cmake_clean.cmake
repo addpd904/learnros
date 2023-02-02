@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/share/gennodejs/ros/topic_communicate/msg/student.js"
+  "/home/addpd904/learnros/devel/share/gennodejs/ros/topic_communicate/msg/student.js"
   "CMakeFiles/topic_communicate_generate_messages_nodejs"
 )
 

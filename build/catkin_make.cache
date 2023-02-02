@@ -1,2 +1,2 @@
 cha4nameprobl:cha5TF:chapter4launch:chapter4metaPackage:commonApi:example:mylaunch:parameterserve:servecommunicate:topic_communicate
--DCATKIN_DEVEL_PREFIX=/home/addpd/roscode/devel -DCMAKE_INSTALL_PREFIX=/home/addpd/roscode/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/addpd904/learnros/devel -DCMAKE_INSTALL_PREFIX=/home/addpd904/learnros/install -G Unix Makefiles

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/share/common-lisp/ros/servecommunicate/srv/mydata.lisp"
+  "/home/addpd904/learnros/devel/share/common-lisp/ros/servecommunicate/srv/mydata.lisp"
   "CMakeFiles/servecommunicate_generate_messages_lisp"
 )
 

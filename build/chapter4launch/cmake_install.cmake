@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/chapter4launch
+# Install script for directory: /home/addpd904/learnros/src/chapter4launch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/chapter4launch/catkin_generated/installspace/chapter4launch.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/chapter4launch/catkin_generated/installspace/chapter4launch.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chapter4launch/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/chapter4launch/catkin_generated/installspace/chapter4launchConfig.cmake"
-    "/home/addpd/roscode/build/chapter4launch/catkin_generated/installspace/chapter4launchConfig-version.cmake"
+    "/home/addpd904/learnros/build/chapter4launch/catkin_generated/installspace/chapter4launchConfig.cmake"
+    "/home/addpd904/learnros/build/chapter4launch/catkin_generated/installspace/chapter4launchConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chapter4launch" TYPE FILE FILES "/home/addpd/roscode/src/chapter4launch/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/chapter4launch" TYPE FILE FILES "/home/addpd904/learnros/src/chapter4launch/package.xml")
 endif()
 

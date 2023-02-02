@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/example/topiccom_getpose"
-  "/home/addpd/roscode/devel/lib/example/topiccom_getpose.pdb"
+  "/home/addpd904/learnros/devel/lib/example/topiccom_getpose"
+  "/home/addpd904/learnros/devel/lib/example/topiccom_getpose.pdb"
   "CMakeFiles/topiccom_getpose.dir/src/topiccom_getpose.cpp.o"
 )
 

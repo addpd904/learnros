@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for topic_communicate_gennodejs.
 
@@ -63,10 +63,10 @@ topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build: topic_commun
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/build
 
 topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean:
-	cd /home/addpd/roscode/build/topic_communicate && $(CMAKE_COMMAND) -P CMakeFiles/topic_communicate_gennodejs.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/topic_communicate && $(CMAKE_COMMAND) -P CMakeFiles/topic_communicate_gennodejs.dir/cmake_clean.cmake
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/clean
 
 topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/topic_communicate /home/addpd/roscode/build /home/addpd/roscode/build/topic_communicate /home/addpd/roscode/build/topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/topic_communicate /home/addpd904/learnros/build /home/addpd904/learnros/build/topic_communicate /home/addpd904/learnros/build/topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : topic_communicate/CMakeFiles/topic_communicate_gennodejs.dir/depend
 

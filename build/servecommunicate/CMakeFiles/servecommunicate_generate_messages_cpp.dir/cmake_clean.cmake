@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/include/servecommunicate/mydata.h"
+  "/home/addpd904/learnros/devel/include/servecommunicate/mydata.h"
   "CMakeFiles/servecommunicate_generate_messages_cpp"
 )
 

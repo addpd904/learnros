@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/addpd/roscode/build/gtest/googletest/cmake_install.cmake")
+  include("/home/addpd904/learnros/build/gtest/googletest/cmake_install.cmake")
 
 endif()
 

@@ -1,7 +1,7 @@
 # generated from genmsg/cmake/pkg-genmsg.context.in
 
 messages_str = ""
-services_str = "/home/addpd/roscode/src/servecommunicate/srv/mydata.srv"
+services_str = "/home/addpd904/learnros/src/servecommunicate/srv/mydata.srv"
 pkg_name = "servecommunicate"
 dependencies_str = "std_msgs"
 langs = "gencpp;geneus;genlisp;gennodejs;genpy"

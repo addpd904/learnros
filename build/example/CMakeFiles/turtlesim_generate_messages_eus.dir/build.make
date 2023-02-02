@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for turtlesim_generate_messages_eus.
 
@@ -63,10 +63,10 @@ example/CMakeFiles/turtlesim_generate_messages_eus.dir/build: turtlesim_generate
 .PHONY : example/CMakeFiles/turtlesim_generate_messages_eus.dir/build
 
 example/CMakeFiles/turtlesim_generate_messages_eus.dir/clean:
-	cd /home/addpd/roscode/build/example && $(CMAKE_COMMAND) -P CMakeFiles/turtlesim_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/example && $(CMAKE_COMMAND) -P CMakeFiles/turtlesim_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : example/CMakeFiles/turtlesim_generate_messages_eus.dir/clean
 
 example/CMakeFiles/turtlesim_generate_messages_eus.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/example /home/addpd/roscode/build /home/addpd/roscode/build/example /home/addpd/roscode/build/example/CMakeFiles/turtlesim_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/example /home/addpd904/learnros/build /home/addpd904/learnros/build/example /home/addpd904/learnros/build/example/CMakeFiles/turtlesim_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : example/CMakeFiles/turtlesim_generate_messages_eus.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/cha5TF
+# Install script for directory: /home/addpd904/learnros/src/cha5TF
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/cha5TF/catkin_generated/installspace/cha5TF.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/cha5TF/catkin_generated/installspace/cha5TF.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha5TF/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/cha5TF/catkin_generated/installspace/cha5TFConfig.cmake"
-    "/home/addpd/roscode/build/cha5TF/catkin_generated/installspace/cha5TFConfig-version.cmake"
+    "/home/addpd904/learnros/build/cha5TF/catkin_generated/installspace/cha5TFConfig.cmake"
+    "/home/addpd904/learnros/build/cha5TF/catkin_generated/installspace/cha5TFConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha5TF" TYPE FILE FILES "/home/addpd/roscode/src/cha5TF/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/cha5TF" TYPE FILE FILES "/home/addpd904/learnros/src/cha5TF/package.xml")
 endif()
 

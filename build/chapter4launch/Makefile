@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles /home/addpd/roscode/build/chapter4launch/CMakeFiles/progress.marks
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/addpd904/learnros/build/CMakeFiles /home/addpd904/learnros/build/chapter4launch/CMakeFiles/progress.marks
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd904/learnros/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/clean
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/preinstall
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/preinstall
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/rule
 .PHONY : chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ _catkin_empty_exported_target: chapter4launch/CMakeFiles/_catkin_empty_exported_
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build.make chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 # Help Target
@@ -207,6 +207,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

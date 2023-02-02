@@ -1,4 +1,4 @@
-prefix=/home/addpd/roscode/install
+prefix=/home/addpd904/learnros/install
 
 Name: topic_communicate
 Description: Description of topic_communicate

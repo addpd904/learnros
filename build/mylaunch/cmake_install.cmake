@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/mylaunch
+# Install script for directory: /home/addpd904/learnros/src/mylaunch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/mylaunch/catkin_generated/installspace/mylaunch.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/mylaunch/catkin_generated/installspace/mylaunch.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mylaunch/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/mylaunch/catkin_generated/installspace/mylaunchConfig.cmake"
-    "/home/addpd/roscode/build/mylaunch/catkin_generated/installspace/mylaunchConfig-version.cmake"
+    "/home/addpd904/learnros/build/mylaunch/catkin_generated/installspace/mylaunchConfig.cmake"
+    "/home/addpd904/learnros/build/mylaunch/catkin_generated/installspace/mylaunchConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mylaunch" TYPE FILE FILES "/home/addpd/roscode/src/mylaunch/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mylaunch" TYPE FILE FILES "/home/addpd904/learnros/src/mylaunch/package.xml")
 endif()
 

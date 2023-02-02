@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/example/src/servicecom_generate.cpp
+/home/addpd904/learnros/src/example/src/servicecom_generate.cpp
 ros/ros.h
-/home/addpd/roscode/src/example/src/ros/ros.h
+/home/addpd904/learnros/src/example/src/ros/ros.h
 iostream
 -
 turtlesim/Spawn.h
-/home/addpd/roscode/src/example/src/turtlesim/Spawn.h
+/home/addpd904/learnros/src/example/src/turtlesim/Spawn.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/python3/dist-packages/topic_communicate/msg/__init__.py"
-  "/home/addpd/roscode/devel/lib/python3/dist-packages/topic_communicate/msg/_student.py"
+  "/home/addpd904/learnros/devel/lib/python3/dist-packages/topic_communicate/msg/__init__.py"
+  "/home/addpd904/learnros/devel/lib/python3/dist-packages/topic_communicate/msg/_student.py"
   "CMakeFiles/topic_communicate_generate_messages_py"
 )
 

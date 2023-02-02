@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/example/src/topiccomPub_tur_cir.cpp
+/home/addpd904/learnros/src/example/src/topiccomPub_tur_cir.cpp
 iostream
 -
 geometry_msgs/Twist.h
-/home/addpd/roscode/src/example/src/geometry_msgs/Twist.h
+/home/addpd904/learnros/src/example/src/geometry_msgs/Twist.h
 ros/ros.h
-/home/addpd/roscode/src/example/src/ros/ros.h
+/home/addpd904/learnros/src/example/src/ros/ros.h
 
 /opt/ros/noetic/include/geometry_msgs/Twist.h
 string

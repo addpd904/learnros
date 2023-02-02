@@ -1,0 +1,7 @@
+digraph G {
+"base_link" -> "laser"[label=" Broadcaster: /myns1/mynode1\nAverage rate: 1.25\nBuffer length: 3.999\nMost recent transform: 1675334547.013\nOldest transform: 1675334543.014\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1675334547.7398055"[ shape=plaintext ] ;
+}->"base_link";
+}

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/topic_communicate/subcriberDIYmsg"
-  "/home/addpd/roscode/devel/lib/topic_communicate/subcriberDIYmsg.pdb"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/subcriberDIYmsg"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/subcriberDIYmsg.pdb"
   "CMakeFiles/subcriberDIYmsg.dir/src/subcriberDIYmsg.cpp.o"
 )
 

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/topic_communicate/listener"
-  "/home/addpd/roscode/devel/lib/topic_communicate/listener.pdb"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/listener"
+  "/home/addpd904/learnros/devel/lib/topic_communicate/listener.pdb"
   "CMakeFiles/listener.dir/src/listener.cpp.o"
 )
 

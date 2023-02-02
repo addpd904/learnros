@@ -1,4 +1,4 @@
-prefix=/home/addpd/roscode/devel
+prefix=/home/addpd904/learnros/devel
 
 Name: chapter4launch
 Description: Description of chapter4launch

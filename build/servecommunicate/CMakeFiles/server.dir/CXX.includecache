@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/devel/include/servecommunicate/mydata.h
+/home/addpd904/learnros/devel/include/servecommunicate/mydata.h
 ros/service_traits.h
 -
 servecommunicate/mydataRequest.h
@@ -14,7 +14,7 @@ servecommunicate/mydataRequest.h
 servecommunicate/mydataResponse.h
 -
 
-/home/addpd/roscode/devel/include/servecommunicate/mydataRequest.h
+/home/addpd904/learnros/devel/include/servecommunicate/mydataRequest.h
 string
 -
 vector
@@ -30,7 +30,7 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/addpd/roscode/devel/include/servecommunicate/mydataResponse.h
+/home/addpd904/learnros/devel/include/servecommunicate/mydataResponse.h
 string
 -
 vector
@@ -46,11 +46,11 @@ ros/builtin_message_traits.h
 ros/message_operations.h
 -
 
-/home/addpd/roscode/src/servecommunicate/src/server.cpp
+/home/addpd904/learnros/src/servecommunicate/src/server.cpp
 ros/ros.h
-/home/addpd/roscode/src/servecommunicate/src/ros/ros.h
+/home/addpd904/learnros/src/servecommunicate/src/ros/ros.h
 servecommunicate/mydata.h
-/home/addpd/roscode/src/servecommunicate/src/servecommunicate/mydata.h
+/home/addpd904/learnros/src/servecommunicate/src/servecommunicate/mydata.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/addpd/roscode/src/cha4nameprobl/src/setname.cpp" "/home/addpd/roscode/build/cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o"
+  "/home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp" "/home/addpd904/learnros/build/cha4nameprobl/CMakeFiles/setname.dir/src/setname.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

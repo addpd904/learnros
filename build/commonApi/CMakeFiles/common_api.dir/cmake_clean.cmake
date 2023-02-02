@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/lib/commonApi/common_api"
-  "/home/addpd/roscode/devel/lib/commonApi/common_api.pdb"
+  "/home/addpd904/learnros/devel/lib/commonApi/common_api"
+  "/home/addpd904/learnros/devel/lib/commonApi/common_api.pdb"
   "CMakeFiles/common_api.dir/src/common_api.cpp.o"
 )
 

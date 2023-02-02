@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/addpd/roscode/devel/share/roseus/ros/servecommunicate/manifest.l"
-  "/home/addpd/roscode/devel/share/roseus/ros/servecommunicate/srv/mydata.l"
+  "/home/addpd904/learnros/devel/share/roseus/ros/servecommunicate/manifest.l"
+  "/home/addpd904/learnros/devel/share/roseus/ros/servecommunicate/srv/mydata.l"
   "CMakeFiles/servecommunicate_generate_messages_eus"
 )
 

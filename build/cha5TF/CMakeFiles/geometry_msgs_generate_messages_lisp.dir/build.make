@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for geometry_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build: geometry_msgs_
 .PHONY : cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/build
 
 cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean:
-	cd /home/addpd/roscode/build/cha5TF && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/cha5TF && $(CMAKE_COMMAND) -P CMakeFiles/geometry_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/clean
 
 cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/cha5TF /home/addpd/roscode/build /home/addpd/roscode/build/cha5TF /home/addpd/roscode/build/cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/cha5TF /home/addpd904/learnros/build /home/addpd904/learnros/build/cha5TF /home/addpd904/learnros/build/cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : cha5TF/CMakeFiles/geometry_msgs_generate_messages_lisp.dir/depend
 

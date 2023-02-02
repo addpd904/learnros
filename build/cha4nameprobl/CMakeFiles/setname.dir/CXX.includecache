@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/addpd/roscode/src/cha4nameprobl/src/setname.cpp
+/home/addpd904/learnros/src/cha4nameprobl/src/setname.cpp
 ros/ros.h
-/home/addpd/roscode/src/cha4nameprobl/src/ros/ros.h
+/home/addpd904/learnros/src/cha4nameprobl/src/ros/ros.h
 std_msgs/String.h
-/home/addpd/roscode/src/cha4nameprobl/src/std_msgs/String.h
+/home/addpd904/learnros/src/cha4nameprobl/src/std_msgs/String.h
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

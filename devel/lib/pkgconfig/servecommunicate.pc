@@ -1,8 +1,8 @@
-prefix=/home/addpd/roscode/devel
+prefix=/home/addpd904/learnros/devel
 
 Name: servecommunicate
 Description: Description of servecommunicate
 Version: 0.0.0
-Cflags: -I/home/addpd/roscode/devel/include
+Cflags: -I/home/addpd904/learnros/devel/include
 Libs: -L${prefix}/lib 
 Requires: roscpp rospy std_msgs message_runtime

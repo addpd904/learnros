@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/parameterserve
+# Install script for directory: /home/addpd904/learnros/src/parameterserve
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/parameterserve/catkin_generated/installspace/parameterserve.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/parameterserve/catkin_generated/installspace/parameterserve.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameterserve/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/parameterserve/catkin_generated/installspace/parameterserveConfig.cmake"
-    "/home/addpd/roscode/build/parameterserve/catkin_generated/installspace/parameterserveConfig-version.cmake"
+    "/home/addpd904/learnros/build/parameterserve/catkin_generated/installspace/parameterserveConfig.cmake"
+    "/home/addpd904/learnros/build/parameterserve/catkin_generated/installspace/parameterserveConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameterserve" TYPE FILE FILES "/home/addpd/roscode/src/parameterserve/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/parameterserve" TYPE FILE FILES "/home/addpd904/learnros/src/parameterserve/package.xml")
 endif()
 

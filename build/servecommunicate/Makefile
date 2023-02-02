@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles /home/addpd/roscode/build/servecommunicate/CMakeFiles/progress.marks
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd/roscode/build/CMakeFiles 0
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/addpd904/learnros/build/CMakeFiles /home/addpd904/learnros/build/servecommunicate/CMakeFiles/progress.marks
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/addpd904/learnros/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/clean
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/preinstall
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/preinstall
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/client.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/client.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/client.dir/rule
 .PHONY : servecommunicate/CMakeFiles/client.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ client: servecommunicate/CMakeFiles/client.dir/rule
 
 # fast build rule for target.
 client/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/build
 .PHONY : client/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ servecommunicate_generate_messages: servecommunicate/CMakeFiles/servecommunicate
 
 # fast build rule for target.
 servecommunicate_generate_messages/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages.dir/build
 .PHONY : servecommunicate_generate_messages/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/rule
 .PHONY : servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _servecommunicate_generate_messages_check_deps_mydata: servecommunicate/CMakeFil
 
 # fast build rule for target.
 _servecommunicate_generate_messages_check_deps_mydata/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build.make servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build.make servecommunicate/CMakeFiles/_servecommunicate_generate_messages_check_deps_mydata.dir/build
 .PHONY : _servecommunicate_generate_messages_check_deps_mydata/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ servecommunicate_gencpp: servecommunicate/CMakeFiles/servecommunicate_gencpp.dir
 
 # fast build rule for target.
 servecommunicate_gencpp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_gencpp.dir/build
 .PHONY : servecommunicate_gencpp/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ servecommunicate_generate_messages_eus: servecommunicate/CMakeFiles/servecommuni
 
 # fast build rule for target.
 servecommunicate_generate_messages_eus/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_eus.dir/build
 .PHONY : servecommunicate_generate_messages_eus/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ servecommunicate_generate_messages_cpp: servecommunicate/CMakeFiles/servecommuni
 
 # fast build rule for target.
 servecommunicate_generate_messages_cpp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_cpp.dir/build
 .PHONY : servecommunicate_generate_messages_cpp/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_geneus.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_geneus.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_geneus.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_geneus.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ servecommunicate_geneus: servecommunicate/CMakeFiles/servecommunicate_geneus.dir
 
 # fast build rule for target.
 servecommunicate_geneus/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_geneus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_geneus.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_geneus.dir/build.make servecommunicate/CMakeFiles/servecommunicate_geneus.dir/build
 .PHONY : servecommunicate_geneus/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ servecommunicate_generate_messages_lisp: servecommunicate/CMakeFiles/servecommun
 
 # fast build rule for target.
 servecommunicate_generate_messages_lisp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_lisp.dir/build
 .PHONY : servecommunicate_generate_messages_lisp/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ servecommunicate_generate_messages_nodejs: servecommunicate/CMakeFiles/servecomm
 
 # fast build rule for target.
 servecommunicate_generate_messages_nodejs/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_nodejs.dir/build
 .PHONY : servecommunicate_generate_messages_nodejs/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ servecommunicate_gennodejs: servecommunicate/CMakeFiles/servecommunicate_gennode
 
 # fast build rule for target.
 servecommunicate_gennodejs/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/build.make servecommunicate/CMakeFiles/servecommunicate_gennodejs.dir/build
 .PHONY : servecommunicate_gennodejs/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_genpy.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_genpy.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_genpy.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_genpy.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ servecommunicate_genpy: servecommunicate/CMakeFiles/servecommunicate_genpy.dir/r
 
 # fast build rule for target.
 servecommunicate_genpy/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_genpy.dir/build.make servecommunicate/CMakeFiles/servecommunicate_genpy.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_genpy.dir/build.make servecommunicate/CMakeFiles/servecommunicate_genpy.dir/build
 .PHONY : servecommunicate_genpy/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ servecommunicate_genlisp: servecommunicate/CMakeFiles/servecommunicate_genlisp.d
 
 # fast build rule for target.
 servecommunicate_genlisp/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/build.make servecommunicate/CMakeFiles/servecommunicate_genlisp.dir/build
 .PHONY : servecommunicate_genlisp/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/rule
 .PHONY : servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ servecommunicate_generate_messages_py: servecommunicate/CMakeFiles/servecommunic
 
 # fast build rule for target.
 servecommunicate_generate_messages_py/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build.make servecommunicate/CMakeFiles/servecommunicate_generate_messages_py.dir/build
 .PHONY : servecommunicate_generate_messages_py/fast
 
 # Convenience name for target.
 servecommunicate/CMakeFiles/server.dir/rule:
-	cd /home/addpd/roscode/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/server.dir/rule
+	cd /home/addpd904/learnros/build && $(MAKE) -f CMakeFiles/Makefile2 servecommunicate/CMakeFiles/server.dir/rule
 .PHONY : servecommunicate/CMakeFiles/server.dir/rule
 
 # Convenience name for target.
@@ -374,7 +374,7 @@ server: servecommunicate/CMakeFiles/server.dir/rule
 
 # fast build rule for target.
 server/fast:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/build
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
 src/client.o: src/client.cpp.o
@@ -383,7 +383,7 @@ src/client.o: src/client.cpp.o
 
 # target to build an object file
 src/client.cpp.o:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.o
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.o
 .PHONY : src/client.cpp.o
 
 src/client.i: src/client.cpp.i
@@ -392,7 +392,7 @@ src/client.i: src/client.cpp.i
 
 # target to preprocess a source file
 src/client.cpp.i:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.i
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.i
 .PHONY : src/client.cpp.i
 
 src/client.s: src/client.cpp.s
@@ -401,7 +401,7 @@ src/client.s: src/client.cpp.s
 
 # target to generate assembly for a file
 src/client.cpp.s:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.s
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/client.dir/build.make servecommunicate/CMakeFiles/client.dir/src/client.cpp.s
 .PHONY : src/client.cpp.s
 
 src/server.o: src/server.cpp.o
@@ -410,7 +410,7 @@ src/server.o: src/server.cpp.o
 
 # target to build an object file
 src/server.cpp.o:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.o
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.o
 .PHONY : src/server.cpp.o
 
 src/server.i: src/server.cpp.i
@@ -419,7 +419,7 @@ src/server.i: src/server.cpp.i
 
 # target to preprocess a source file
 src/server.cpp.i:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.i
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.i
 .PHONY : src/server.cpp.i
 
 src/server.s: src/server.cpp.s
@@ -428,7 +428,7 @@ src/server.s: src/server.cpp.s
 
 # target to generate assembly for a file
 src/server.cpp.s:
-	cd /home/addpd/roscode/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.s
+	cd /home/addpd904/learnros/build && $(MAKE) -f servecommunicate/CMakeFiles/server.dir/build.make servecommunicate/CMakeFiles/server.dir/src/server.cpp.s
 .PHONY : src/server.cpp.s
 
 # Help Target
@@ -475,6 +475,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

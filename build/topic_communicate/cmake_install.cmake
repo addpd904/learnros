@@ -1,8 +1,8 @@
-# Install script for directory: /home/addpd/roscode/src/topic_communicate
+# Install script for directory: /home/addpd904/learnros/src/topic_communicate
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/addpd/roscode/install")
+  set(CMAKE_INSTALL_PREFIX "/home/addpd904/learnros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,53 +38,53 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/msg" TYPE FILE FILES "/home/addpd/roscode/src/topic_communicate/msg/student.msg")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/msg" TYPE FILE FILES "/home/addpd904/learnros/src/topic_communicate/msg/student.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/cmake" TYPE FILE FILES "/home/addpd/roscode/build/topic_communicate/catkin_generated/installspace/topic_communicate-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/cmake" TYPE FILE FILES "/home/addpd904/learnros/build/topic_communicate/catkin_generated/installspace/topic_communicate-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/addpd/roscode/devel/include/topic_communicate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/addpd904/learnros/devel/include/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/addpd/roscode/devel/share/roseus/ros/topic_communicate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/addpd904/learnros/devel/share/roseus/ros/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/addpd/roscode/devel/share/common-lisp/ros/topic_communicate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/common-lisp/ros" TYPE DIRECTORY FILES "/home/addpd904/learnros/devel/share/common-lisp/ros/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/addpd/roscode/devel/share/gennodejs/ros/topic_communicate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gennodejs/ros" TYPE DIRECTORY FILES "/home/addpd904/learnros/devel/share/gennodejs/ros/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/addpd/roscode/devel/lib/python3/dist-packages/topic_communicate")
+  execute_process(COMMAND "/usr/bin/python3" -m compileall "/home/addpd904/learnros/devel/lib/python3/dist-packages/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/addpd/roscode/devel/lib/python3/dist-packages/topic_communicate")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python3/dist-packages" TYPE DIRECTORY FILES "/home/addpd904/learnros/devel/lib/python3/dist-packages/topic_communicate")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd/roscode/build/topic_communicate/catkin_generated/installspace/topic_communicate.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/addpd904/learnros/build/topic_communicate/catkin_generated/installspace/topic_communicate.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/cmake" TYPE FILE FILES "/home/addpd/roscode/build/topic_communicate/catkin_generated/installspace/topic_communicate-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/cmake" TYPE FILE FILES "/home/addpd904/learnros/build/topic_communicate/catkin_generated/installspace/topic_communicate-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate/cmake" TYPE FILE FILES
-    "/home/addpd/roscode/build/topic_communicate/catkin_generated/installspace/topic_communicateConfig.cmake"
-    "/home/addpd/roscode/build/topic_communicate/catkin_generated/installspace/topic_communicateConfig-version.cmake"
+    "/home/addpd904/learnros/build/topic_communicate/catkin_generated/installspace/topic_communicateConfig.cmake"
+    "/home/addpd904/learnros/build/topic_communicate/catkin_generated/installspace/topic_communicateConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate" TYPE FILE FILES "/home/addpd/roscode/src/topic_communicate/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/topic_communicate" TYPE FILE FILES "/home/addpd904/learnros/src/topic_communicate/package.xml")
 endif()
 

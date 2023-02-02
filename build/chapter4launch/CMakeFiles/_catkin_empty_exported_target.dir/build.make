@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/addpd/roscode/src
+CMAKE_SOURCE_DIR = /home/addpd904/learnros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/addpd/roscode/build
+CMAKE_BINARY_DIR = /home/addpd904/learnros/build
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -63,10 +63,10 @@ chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build: _catkin_empty
 .PHONY : chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/build
 
 chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/clean:
-	cd /home/addpd/roscode/build/chapter4launch && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
+	cd /home/addpd904/learnros/build/chapter4launch && $(CMAKE_COMMAND) -P CMakeFiles/_catkin_empty_exported_target.dir/cmake_clean.cmake
 .PHONY : chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/addpd/roscode/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd/roscode/src /home/addpd/roscode/src/chapter4launch /home/addpd/roscode/build /home/addpd/roscode/build/chapter4launch /home/addpd/roscode/build/chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/addpd904/learnros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/addpd904/learnros/src /home/addpd904/learnros/src/chapter4launch /home/addpd904/learnros/build /home/addpd904/learnros/build/chapter4launch /home/addpd904/learnros/build/chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : chapter4launch/CMakeFiles/_catkin_empty_exported_target.dir/depend
 
