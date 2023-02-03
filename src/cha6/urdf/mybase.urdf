@@ -35,12 +35,14 @@
             </material>
         </visual>
     </link>
+    <!-- base_link -->
     <joint name="base_link2base_footprint" type="fixed">
         <parent link="base_footprint"/>
         <child link="base_link"/>
         <origin xyz="0.0 0.0 0.25" rpy="0.0 0.0 0.0"/>
         
     </joint>
+<!-- camera -->
     <joint name="camera2baselink" type="continuous">
         <parent link="base_link"/>
         <child link="camera"/>

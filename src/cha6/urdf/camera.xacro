@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="laser">
+<!-- camera macro-->
+    <xacro:property name="camera_x_length" value="0.1"/>
+    <xacro:property name="camera_y_length" value="0.1"/>
+    <xacro:property name="camera_z_length" value="0.1"/>
+
+    <xacro:macro name="add_camera" params="">
+        <link name="camera">
+            <visual>
+                <geometry>
+                    <box size="${camera_x_length} ${camera_y_length} ${camera_z_length}"/>
+                </geometry>
+                <material name="red">
+                    <color rgba="1 0 0 0.7"/>
+                </material>
+            </visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </link>
+
+        <joint name="camera2base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="camera"/>
+            <origin xyz="${base_link_r-camera_x_length/2} 0.0 ${base_link_length/2+camera_x_length/2}" rpy="0.0 0.0 0.0"/>
+            <!-- Rotate about the z axis -->
+            <axis xyz="0.0 0.0 1"/>
+        </joint>
+    </xacro:macro>
+    <!-- use camera macro -->
+    <xacro:add_camera/>
+</robot>

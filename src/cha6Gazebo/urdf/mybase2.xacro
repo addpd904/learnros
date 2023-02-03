@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robot_name">
+    
+    <xacro:property name="floor_base_distance" value="0.1"/>
+    <xacro:property name="PI" value="3.1415926"/>
+
+<!-- base link -->
+    <xacro:property name="base_link_r" value="0.5"/>
+    <xacro:property name="base_link_length" value="0.5"/>
+    <xacro:property name="base_link_m" value="2"/>
+
+    <link name="base_footprint">
+        <visual>
+            <geometry>
+                <sphere radius="0.0001"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="base_link">
+        <visual>
+            <geometry>
+                <cylinder radius="${base_link_r}" length="${base_link_length}"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <material name="red">
+                <color rgba="1 0 0 0.6"/>
+            </material>
+        </visual>
+        <collision>
+             <geometry>
+                <cylinder radius="${base_link_r}" length="${base_link_length}"/>
+            </geometry>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </collision>
+
+        <!-- set inertial matrix -->
+        <xacro:cylinder_inertial_matrix m="${base_link_m}" r="${base_link_r}" h="${base_link_length}"/>
+    </link>
+    <joint name="base_link2base_footprint" type="fixed">
+        <parent link="base_footprint"/>
+        <child link="base_link"/>
+        <origin xyz="0.0 0.0 ${base_link_length/2+floor_base_distance}" rpy="0.0 0.0 0.0"/>
+    </joint>
+    <gazebo reference="base_link">
+        <material>Gazebo/Yellow</material>
+    </gazebo>
+
+
+<!-- universal wheel macro -->
+    <xacro:property name="uni_wheel_r" value="0.05"/>
+    <xacro:property name="uni_wheel_m" value="0.01"/>
+    <!-- flage -1:right wheel 1:left wheel -->
+    <xacro:macro name="add_uni_wheel" params="name flage">
+        <link name="${name}_uni_wheel">
+            <visual>
+                <geometry>
+                    <sphere radius="${uni_wheel_r}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <sphere radius="${uni_wheel_r}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </collision>
+            <!-- set inertial matrix -->
+            <xacro:sphere_inertial_matrix m="${uni_wheel_m}" r="${uni_wheel_r}"/>
+        </link>
+        <joint name="${name}_uni_wheel2base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${name}_uni_wheel"/>
+            <origin xyz="${(base_link_r-uni_wheel_r)*flage} 0.0 ${-(uni_wheel_r+base_link_length/2)}" rpy="0.0 0.0 0.0"/>
+            <!-- can rotate about the x,y,z axis -->
+            <axis xyz="1 1 1"/>
+        </joint>
+        <gazebo reference="${name}_uni_wheel">
+            <material>Gazebo/Red</material>
+        </gazebo>
+    </xacro:macro>
+
+    <!-- driving wheel macro -->
+     <xacro:property name="dri_wheel_r" value="0.2"/>
+     <xacro:property name="dri_wheel_length" value="0.15"/>
+     <xacro:property name="dri_wheel_m" value="0.2"/>
+    <!-- flage -1:right wheel 1:left wheel -->
+    <xacro:macro name="add_dri_wheel" params="name flage">
+        <link name="${name}_dri_wheel">
+            <visual>
+                <geometry>
+                    <cylinder radius="${dri_wheel_r}" length="${dri_wheel_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="${PI/2} 0.0 0.0"/>
+            </visual>
+            <collision>
+                 <geometry>
+                    <cylinder radius="${dri_wheel_r}" length="${dri_wheel_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="${PI/2} 0.0 0.0"/>
+            </collision>
+            <!-- set inertial matrix -->
+            <xacro:cylinder_inertial_matrix m="${dri_wheel_m}" h="${dri_wheel_length}" r="${dri_wheel_r}"/>
+        </link>
+        <joint name="${name}_dri_wheel2base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="${name}_dri_wheel"/>
+            <origin xyz="0 ${base_link_r*flage} ${dri_wheel_r-(floor_base_distance+base_link_length/2)}" rpy="0.0 0.0 0.0"/>
+            <!-- can rotate about the y axis -->
+            <axis xyz="0 1 0"/>
+        </joint>
+        <gazebo reference="${name}_dri_wheel">
+            <material>Gazebo/Blue</material>
+        </gazebo>
+    </xacro:macro>
+
+    <!-- use universal wheel macro -->
+    <xacro:add_uni_wheel name="left" flage="1"/>
+    <xacro:add_uni_wheel name="right" flage="-1"/>
+    <!-- use driving wheel macro -->
+    <xacro:add_dri_wheel name="left" flage="1"/>
+    <xacro:add_dri_wheel name="right" flage="-1"/>
+</robot>

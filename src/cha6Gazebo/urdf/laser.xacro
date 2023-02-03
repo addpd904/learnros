@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="laser">
+    <!-- support -->
+    <xacro:property name="support_r" value="0.015"/>
+    <xacro:property name="support_length" value="0.30"/>
+    <xacro:property name="support_m" value="0.01"/>
+    <xacro:macro name="add_support" params="">
+        <link name="support">
+            <visual>
+                <geometry>
+                    <cylinder radius="${support_r}" length="${support_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <cylinder radius="${support_r}" length="${support_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            </collision>
+            <!-- set inertial matrix -->
+            <xacro:cylinder_inertial_matrix m="${support_m}" r="${support_r}" h="${support_length}"/>
+
+        </link>
+        <joint name="support2base_link" type="fixed">
+            <parent link="base_link"/>
+            <child link="support"/>
+            <origin xyz="0 0 ${base_link_length/2+support_length/2}" rpy="0.0 0.0 0.0"/>
+        </joint>
+        <gazebo reference="support">
+            <material>Gazebo/Blue</material>
+        </gazebo>
+    </xacro:macro>
+    <!-- laser -->
+    <xacro:property name="laser_length" value="0.03"/>
+    <xacro:property name="laser_m" value="0.03"/>
+    
+    <xacro:macro name="add_laser" params="">
+        <link name="laser">
+            <visual>
+                <geometry>
+                    <box size="${laser_length} ${laser_length} ${laser_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${laser_length} ${laser_length} ${laser_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0 0.0 0.0"/>
+            </collision>
+            <!-- set inertial matrix -->
+            <xacro:Box_inertial_matrix m="${laser_m}" l="${laser_length}" w="${laser_length}" h="${laser_length}" />
+        </link>
+        <joint name="laser2support" type="fixed">
+            <parent link="support"/>
+            <child link="laser"/>
+            <origin xyz="0 0 ${support_length/2+laser_length/2}" rpy="0.0 0.0 0.0"/>
+        </joint>
+        <gazebo reference="laser">
+            <material>Gazebo/Red</material>
+        </gazebo>
+    </xacro:macro>
+    <!-- use macro -->
+    <xacro:add_support/>
+    <xacro:add_laser/>
+</robot>

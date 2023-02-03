@@ -1,4 +1,7 @@
-<!-- xacro to urdf :rosrun xacro xacro xxx.xacro > xxx.urdf -->
+<!-- 1.use xacro file -->
+<!-- way1:xacro to urdf :rosrun xacro xacro xxx.xacro > xxx.urdf -->
+<!-- way2: parse xacro file directly:-->
+<!-- <param name="robot_description" command="$(find xacro)/xacro $(find cha6)/urdf/myrobot2.xacro" /> -->
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="mycar">
     <!-- 1.DIY constant -->
     <xacro:property name="PI" value="3.14" />

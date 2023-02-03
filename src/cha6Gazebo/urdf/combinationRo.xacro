@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="myrobot2">
+    <xacro:include filename="$(find cha6Gazebo)/urdf/inertialMa.xacro"/>
+    <xacro:include filename="$(find cha6Gazebo)/urdf/mybase2.xacro"/>
+    <xacro:include filename="$(find cha6Gazebo)/urdf/camera.xacro"/>
+    <xacro:include filename="$(find cha6Gazebo)/urdf/laser.xacro"/>    
+</robot>

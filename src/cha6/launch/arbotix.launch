@@ -1,13 +1,20 @@
+
 <launch>
+    <!-- 1.launch state node -->
     <!-- joint state publisher -->
     <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
     <!-- robot state publisher -->
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
-    <!-- control joint node -->
-    <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
-    <!-- parse xacro file directly -->
+    <!-- 2.parse xacro file directly -->
     <param name="robot_description" command="$(find xacro)/xacro $(find cha6)/urdf/combinationRo.xacro" />
-    <!-- launch rviz -->
+    <!-- 3.launch rviz -->
     <node ns="mynode1" pkg="rviz" type="rviz" name="rviz" output="screen"></node>
+    <!-- 4.launch arbotix -->
+    <node name="arbotix" pkg="arbotix_python" type="arbotix_driver" output="screen">
+        <!-- load the robot parameter to param server from file -->
+        <rosparam file="$(find cha6)/config/control.yaml" command="load" />
+        <!-- simulation enviroment :true -->
+        <param name="sim" value="true" />
+    </node>
 
 </launch>

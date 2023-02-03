@@ -1,12 +1,13 @@
 <launch>
-    <!-- 添加关节状态发布节点 -->
+    <!-- joint state publisher -->
     <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher" />
-    <!-- 添加机器人状态发布节点 -->
+    <!-- robot state publisher -->
     <node pkg="robot_state_publisher" type="robot_state_publisher" name="robot_state_publisher" />
-    <!-- 可选:用于控制关节运动的节点 -->
+    <!-- control joint node -->
     <node pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" name="joint_state_publisher_gui" />
-
-    <param name="robot_description" textfile="$(find cha6)/urdf/myrobot.urdf"/>
+    <!-- add urdf file path to param server -->
+    <param name="robot_description" textfile="$(find cha6)/urdf/mybase.urdf"/>
+    <!-- launch rviz -->
     <node ns="mynode1" pkg="rviz" type="rviz" name="rviz" output="screen"></node>
 
 </launch>

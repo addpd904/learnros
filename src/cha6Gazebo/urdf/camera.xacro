@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="laser">
+<!-- camera macro-->
+    <xacro:property name="camera_x_length" value="0.1"/>
+    <xacro:property name="camera_y_length" value="0.1"/>
+    <xacro:property name="camera_z_length" value="0.1"/>
+    <xacro:property name="camera_m" value="0.01"/>
+
+    <xacro:macro name="add_camera" params="">
+        <link name="camera">
+            <visual>
+                <geometry>
+                    <box size="${camera_x_length} ${camera_y_length} ${camera_z_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </visual>
+            <collision>
+                <geometry>
+                    <box size="${camera_x_length} ${camera_y_length} ${camera_z_length}"/>
+                </geometry>
+                <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            </collision>
+            <xacro:Box_inertial_matrix m="${camera_m}" l="${camera_x_length}" w="${camera_y_length}" h="${camera_z_length}" />
+        </link>
+
+        <joint name="camera2base_link" type="continuous">
+            <parent link="base_link"/>
+            <child link="camera"/>
+            <origin xyz="${base_link_r-camera_x_length/2} 0.0 ${base_link_length/2+camera_x_length/2}" rpy="0.0 0.0 0.0"/>
+            <!-- Rotate about the z axis -->
+            <axis xyz="0.0 0.0 1"/>
+        </joint>
+        <gazebo reference="camera">
+            <material>Gazebo/Red</material>
+        </gazebo>
+        
+    </xacro:macro>
+    <!-- use camera macro -->
+    <xacro:add_camera/>
+</robot>

@@ -1,0 +1,20 @@
+controllers: {
+   # single controller
+   base_controller: {
+      # type:differential control
+       type: diff_controller,
+       #coordinate
+       base_frame_id: base_footprint, 
+       #distance of two wheel
+       base_width: 0.2,
+       #hz :2000 times per second (publish)
+       ticks_meter: 2000, 
+       #PID
+       Kp: 12, 
+       Kd: 12, 
+       Ki: 0, 
+       Ko: 50, 
+       #limit accelerate(1 m/s)
+       accel_limit: 1.0 
+    }
+}
