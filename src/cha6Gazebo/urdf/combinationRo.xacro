@@ -3,5 +3,11 @@
     <xacro:include filename="$(find cha6Gazebo)/urdf/inertialMa.xacro"/>
     <xacro:include filename="$(find cha6Gazebo)/urdf/mybase2.xacro"/>
     <xacro:include filename="$(find cha6Gazebo)/urdf/camera.xacro"/>
-    <xacro:include filename="$(find cha6Gazebo)/urdf/laser.xacro"/>    
+    <xacro:include filename="$(find cha6Gazebo)/urdf/laser.xacro"/>   
+    <!-- simulate hardware(camera laser...) -->
+    <xacro:include filename="$(find cha6Gazebo)/urdf/gazebo/move.xacro"/> 
+    <xacro:include filename="$(find cha6Gazebo)/urdf/gazebo/laserSim.xacro"/>   
+    <xacro:include filename="$(find cha6Gazebo)/urdf/gazebo/cameraSim.xacro"/>   
+    <xacro:include filename="$(find cha6Gazebo)/urdf/gazebo/kinectSim.xacro"/>   
+
 </robot>
